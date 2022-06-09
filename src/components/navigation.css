@@ -1,0 +1,17 @@
+.nav1{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(5, 5, 32);
+    color: rgb(0, 255, 191);
+    font-weight: bold;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.nav1 li{
+    padding: 15px;
+    border: solid 1px blanchedalmond;
+}

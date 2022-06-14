@@ -1,0 +1,10 @@
+.greetings{
+    padding: 15px;
+    padding-right: 5%;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(17, 17, 61);
+    color: rgb(213, 216, 215);
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}

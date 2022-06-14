@@ -1,4 +1,5 @@
 import "./navigation.css"
+import CartWidget from "../carrito/cartWidget"
 
 const Navigation = () => {
     return (
@@ -9,6 +10,7 @@ const Navigation = () => {
                 <li>Nustros Productos</li>
                 <li>Postventa</li>
                 <li>Contacto</li>
+                <CartWidget/>
             </ul>
         </nav>
     )

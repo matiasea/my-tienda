@@ -1,11 +1,30 @@
 import "./ItemListContainer.css"
+import Item from "../Item/item";
+import data from "../Data/data";
+import React, { useState, useEffect } from "react";
+import userEvent from "@testing-library/user-event";
+import "./ItemListContainer.css"
 
-const ItemListContainer = (props) => {
-    return <div className="greetings">
-        <h1>Bienvenidos al e-comerce de:</h1>
-        <h2>{props.nombre}</h2>
 
-    </div>
+const ItemListContainer = () => {
+    const [ items, setItems ] = useState ([]);
+
+    useEffect(() => {
+        fetch('https://api.github.com/users')
+  .then(response => response.json())
+  .then(json => setItems(json))
+        
+
+    }, []);
+    return (
+        <div className="itemList"> ItemListContainer
+            {data.map((data) => (
+                <Item key={data.id} data={data} />
+
+            ))}
+
+        </div>
+    )
 }
 
 export default ItemListContainer;

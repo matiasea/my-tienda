@@ -1,0 +1,13 @@
+.item{
+    display: flex;
+    width: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: medium;
+    font-family: 'Cambria';
+    font-weight: bold;
+    border: 5px black solid;
+
+}

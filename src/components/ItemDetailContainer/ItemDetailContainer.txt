@@ -13,8 +13,10 @@
         "marca":"Patrick",
         "precio":65000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_952184-MLA43407133867_092020-F.webp",
-        "descripcion1":"Capacidad: 329LTS",
-        "descripcion2":"Dispenser de Agua"
+        "descripcion1":"Diseño: La heladera Patrick HPK151M11S cuenta con un moderno y cómodo diseño con el freezer en la parte superior y el refrigerador en la inferior. En su interior, viene con anaqueles de vidrio templado y estantes regulables en altura que se adaptan a las diversas necesidades de guardado de productos y alimentos. Además, trae un cajón especial para frutas y verduras. Por otro lado, cuenta con un dispenser de agua incorporado en la puerta para acceder fácilmente con capacidad para 2 litros. Heladera en 12 cuotas
+Consumo energético: Su calificación de eficiencia energética es clase A, lo que significa que su utilización de electricidad es óptima, cuidando al medio ambiente.
+Capacidad: La heladera con freezer cuenta con una capacidad de almacenamiento total de 388 litros. El refrigerador cuenta con 264 litros para ordenar alimentos y bebidas y el espacio para congelados en el freezer es de 124 litros."
+       
     },
     {
         "id":"003",

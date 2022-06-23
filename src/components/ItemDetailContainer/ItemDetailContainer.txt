@@ -24,8 +24,9 @@ Capacidad: La heladera con freezer cuenta con una capacidad de almacenamiento to
         "marca":"Longvie",
         "precio":49000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_768157-MLA48658246722_122021-F.webp",
-        "descripcion1":"Luz en horno",
-        "descripcion2":"Encendido Electrico"
+        "descripcion1":"Diseño:La cocina Longvie 12331X posee un diseño clásico que cuenta con cuatro hornallas; horno y cajón parrilla independiente. Dispone de 1 quemador grande; 2 medianos y uno pequeño y todos tienen válvulas de seguridad que cortan el suministro de gas, si por alguna razón se apagan las llamas. Asu vez, cuenta con encendido electrónico en hornallas y horno, con bujías de cerámica y electrodos de acero inoxidable.
+Dimensiones: Sus medidas estándar de 85 cm de alto; 56 cm de ancho y 58 cm de profundidad hacen que se ajuste a cualquier tipo de cocina.
+Características especiales: Las paredes interiores de la cocina 12331X poseen un enlozado de última generación denominado QuickClean con capacidad antiadherente que facilita su limpieza y las hace muy resistentes. Además, el horno tiene una puerta visor con doble vidrio templado y luz interna que permite ver la cocción de los alimentos durante todo el proceso."   
     },
     {
         "id":"004",

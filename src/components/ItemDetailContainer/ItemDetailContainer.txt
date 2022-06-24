@@ -15,8 +15,7 @@
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_952184-MLA43407133867_092020-F.webp",
         "descripcion1":"Diseño: La heladera Patrick HPK151M11S cuenta con un moderno y cómodo diseño con el freezer en la parte superior y el refrigerador en la inferior. En su interior, viene con anaqueles de vidrio templado y estantes regulables en altura que se adaptan a las diversas necesidades de guardado de productos y alimentos. Además, trae un cajón especial para frutas y verduras. Por otro lado, cuenta con un dispenser de agua incorporado en la puerta para acceder fácilmente con capacidad para 2 litros. Heladera en 12 cuotas
 Consumo energético: Su calificación de eficiencia energética es clase A, lo que significa que su utilización de electricidad es óptima, cuidando al medio ambiente.
-Capacidad: La heladera con freezer cuenta con una capacidad de almacenamiento total de 388 litros. El refrigerador cuenta con 264 litros para ordenar alimentos y bebidas y el espacio para congelados en el freezer es de 124 litros."
-       
+Capacidad: La heladera con freezer cuenta con una capacidad de almacenamiento total de 388 litros. El refrigerador cuenta con 264 litros para ordenar alimentos y bebidas y el espacio para congelados en el freezer es de 124 litros" 
     },
     {
         "id":"003",
@@ -26,7 +25,7 @@ Capacidad: La heladera con freezer cuenta con una capacidad de almacenamiento to
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_768157-MLA48658246722_122021-F.webp",
         "descripcion1":"Diseño:La cocina Longvie 12331X posee un diseño clásico que cuenta con cuatro hornallas; horno y cajón parrilla independiente. Dispone de 1 quemador grande; 2 medianos y uno pequeño y todos tienen válvulas de seguridad que cortan el suministro de gas, si por alguna razón se apagan las llamas. Asu vez, cuenta con encendido electrónico en hornallas y horno, con bujías de cerámica y electrodos de acero inoxidable.
 Dimensiones: Sus medidas estándar de 85 cm de alto; 56 cm de ancho y 58 cm de profundidad hacen que se ajuste a cualquier tipo de cocina.
-Características especiales: Las paredes interiores de la cocina 12331X poseen un enlozado de última generación denominado QuickClean con capacidad antiadherente que facilita su limpieza y las hace muy resistentes. Además, el horno tiene una puerta visor con doble vidrio templado y luz interna que permite ver la cocción de los alimentos durante todo el proceso."   
+Características especiales: Las paredes interiores de la cocina 12331X poseen un enlozado de última generación denominado QuickClean con capacidad antiadherente que facilita su limpieza y las hace muy resistentes. Además, el horno tiene una puerta visor con doble vidrio templado y luz interna que permite ver la cocción de los alimentos durante todo el proceso"
     },
     {
         "id":"004",

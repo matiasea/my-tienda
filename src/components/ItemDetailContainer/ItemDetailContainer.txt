@@ -2,117 +2,178 @@
     {
         "id":"001", 
          "articulo":"LAVARROPAS",
+         "categoria": "Electrohogar",
          "marca":"Philco",
          "precio":58000,
          "img":"https://http2.mlstatic.com/D_NQ_NP_2X_948447-MLA32542580368_102019-F.webp",
-         "descripcion1":"Marca: Philco Modelo: PHLF061B Color: Blanco Medidas: 85 x 59,5 x 47 cm Peso: 54 kg Origen: Argentina CAPACIDAD DE LAVADO 6KG 1000 RPM EFICIENCIA ENERGETICA A EFICIENCIA LAVADO A EFICIENCIA DE CENTRIFUGADO A MOTOR LOW NOISE PUERTA EXTRA GRANDE 23 PROGRAMAS Y 3 FUNCIONES LAVADO RAPIDO DE 15’ TAMBOR DE ACERO INOXIDABLE"
+         "descripcion1":"6kg de carga",
+         "descripcion2":"1000 RPM",
+         "descripcion3":"Modelo: PHLF061B Color: Blanco Medidas: 85 x 59,5 x 47 cm Peso: 54 kg Origen: Argentina 
+         Diseño: El lavarropas Longvie L18012 es de carga frontal y diseño cuidado. Cuenta con una gran puerta de acceso de doble vidrio que abre 180 grados, lo que facilita la carga de ropa. Además, un cómodo display digital multifunción indica en todo momento el tiempo restante y el programa que está en funcionamiento. A su vez, tiene exclusión de centrifugado y un sistema de seguridad para bloquear la escotilla. En tanto, posee un depósito especial para jabón líquido; cuba de polipropileno e indicadores luminosos.
+         Tecnología: Gracias a un panel de control claro y visible en el frente, su uso es muy amigable y sencillo. A su vez, cuenta con control de temperatura y de velocidad de centrifugado. También puede iniciarse el proceso en diferido, para elegir el momento adecuado. Por otra parte, utiliza la tecnología de centrifugado inteligente Autoequilibrado: un sistema que detecta cualquier desequilibrio provocado por una posición incorrecta de las prendas y las reacomoda automáticamente.
+         Capacidad y potencia: Su capacidad de lavado es de hasta 8 kilos y su potencia de centrifugado de 1200 RPM (revoluciones por minuto). Hay que tener en cuenta que el peso se calcula en prendas secas, no mojadas. Por lo que, para una familia de 4 personas se recomienda una capacidad de 9 kilos, aproximadamente."
     },
     {
         "id":"002",
         "articulo":"HELADERA",
+        "categoria": "Electrohogar",
         "marca":"Patrick",
         "precio":65000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_952184-MLA43407133867_092020-F.webp",
-        "descripcion1":"detalle.." 
+        "descripcion1":"329 LTS",
+        "descripcion2":"Dispenser de Agua",
+        "descripcion3":"Modelo: 55KKJ8 Color: Gris Medidas: 1780 x 59,5 x 47 cm Peso: 49 kg Origen: Argentina 
+        Diseño: La heladera Patrick HPK141M10S cuenta con un moderno y cómodo diseño con el freezer en la parte superior y el refrigerador en la inferior. En su interior, viene con anaqueles y estantes regulables en altura que se adaptan a las diversas necesidades de guardado de productos y alimentos. Además, trae un cajón especial para frutas y verduras. Por otro lado, cuenta con un dispenser de agua incorporado en la puerta para acceder fácilmente con capacidad para 2 litros. Heladera en 12 cuotas
+        Consumo energético: Su calificación de eficiencia energética es clase A, lo que significa que su utilización de electricidad es óptima, cuidando al medio ambiente. Por otro lado, su iluminación LED permite el ahorro y evita el calor que producen otro tipo de luces.
+        Capacidad: Su capacidad de almacenamiento total es de 355 litros. El refrigerador cuenta con 264 litros para ordenar alimentos y bebidas y el espacio para congelados en el freezer es de 91 litros."
     },
     {
         "id":"003",
         "articulo":"COCINA",
+        "categoria": "Electrohogar",
         "marca":"Longvie",
         "precio":49000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_768157-MLA48658246722_122021-F.webp",
-        "descripcion1":"Diseño:La cocina Longvie 12331X posee un diseño clásico que cuenta con cuatro hornallas; horno y cajón parrilla independiente. Dispone de 1 quemador grande; 2 medianos y uno pequeño y todos tienen válvulas de seguridad que cortan el suministro de gas, si por alguna razón se apagan las llamas. Asu vez, cuenta con encendido electrónico en hornallas y horno, con bujías de cerámica y electrodos de acero inoxidable.
-Dimensiones: Sus medidas estándar de 85 cm de alto; 56 cm de ancho y 58 cm de profundidad hacen que se ajuste a cualquier tipo de cocina.
-Características especiales: Las paredes interiores de la cocina 12331X poseen un enlozado de última generación denominado QuickClean con capacidad antiadherente que facilita su limpieza y las hace muy resistentes. Además, el horno tiene una puerta visor con doble vidrio templado y luz interna que permite ver la cocción de los alimentos durante todo el proceso"
+        "descripcion1":"Luz en Horno",
+        "descripcion2":"Encendido Electrico",
+        "descripcion3":"Modelo: 13331xf Color: Acero Inoxidable Medidas: 78 x 56 x 55 cm Peso: 42 kg Origen: Argentina 
+        Diseño: La cocina Longvie 13331XF tiene un diseño clásico en color grafito que cuenta con cuatro hornallas; horno y cajón parrilla.Tiene válvulas de seguridad en hornallas que cortan el suministro de gas, si por alguna razón se apagan las llamas. Además es multigas, por lo cual puede ser utilizada con gas natural o envasado.
+        Características especiales: Las paredes interiores de la cocina 13331XF poseen un revestimiento esmaltado que facilita la limpieza y la remoción de grasitud ya que son antiadherentes. Por otra parte, luz en el interior del horno y encendido electrónico.
+        Especificaciones: Eficiencia Energética: A+ en hornallas y A++ en horno. Rejas de Hierro Fundido"
     },
     {
         "id":"004",
         "articulo":"TV SMART",
+        "categoria": "Tv, Audio y Video",
         "marca":"Samsung",
         "precio":35000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_934496-MLA45625835121_042021-F.webp",
         "descripcion1":"Tecnologia Smart",
-        "descripcion2":"32P - Resolucion UHD"
+        "descripcion2":"32P - Resolucion UHD",
+        "descripcion3":"Modelo: UN32T4300A Color: Negro Medidas: 73 x 46 x 8 cm Peso: 4,1 kg Origen: Argentina 
+        Conectá tus dispositivos: Mediante sus entradas HDMI podés vincular reproductores de audio y video; consolas de juegos y notebooks. Su gran capacidad de transmisión de datos permite disfrutar de imágenes en alta definición y un sonido de gran fidelidad.
+        Navegá por la web: Gracias a posee Wi- Fi incorporado vas a poder acceder a internet de forma inalámbrica o bien, a través de cable de red mediante su puerto LAN. Navegá por la web y disfrutá de aplicaciones como Netflix, Facebook y Twitter, entre otras.
+        Disfrutá en HD: El Smart TV Samsung 32” UN32T4300A cuenta con una pantalla de visualización widescreen (16:9) con resolución HD (1366 x 768 píxeles) que brinda una gran calidad de imagen y contraste."
     },
     {
         "id":"005",
         "articulo":"TOSTADORA",
+        "categoria": "Pequeños electrodomesticos",
         "marca":"Atma",
         "precio":5000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_766023-MLA47794441020_102021-F.webp",
         "descripcion1":"1000 W",
-        "descripcion2":"Capacidad 2 panes"
+        "descripcion2":"Capacidad 2 panes",
+        "descripcion3":"Modelo: TO20RN Color: Rojo Peso: 1,9 kg Origen: Argentina 
+        Capacidad: Esta tostadora tiene capacidad para 2 rebanadas de pan.
+        Diseño: La tostadora ATMA TO20RN cuenta con un moderno diseño, que incluye bandeja recolectora de migas y base antideslizante.
+        Funciones: Gracias a su potencia de 700 watts y 7 niveles de tostado, podrás armar tus tostadas favoritas. Además, cuenta con las funciones cancelar, recalentar y descongelar."
     },
     {
         "id":"006",
         "articulo":"EXPRIMIDOR",
+        "categoria": "Pequeños electrodomesticos",
         "marca":"Philips",
         "precio":4500,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_679153-MLA40987656790_032020-F.webp",
         "descripcion1":"0,5 LTS",
-        "descripcion2":"300 W"
+        "descripcion2":"300 W",
+        "descripcion3":"Modelo: HR2738/00 Color: Blanco Peso: 0,8 kg Origen: China 
+        Diseño: El exprimidor Philips HR-2738 cuenta con un diseño compacto de fácil almacenamiento y una jarra de 0.5 litros de capacidad con boquilla anti goteo. Además, las piezas son desmontables para facilitar su limpieza y son aptas para lavado en lavavajillas.
+        Por otro lado, dispone en su base de un espacio de guardado para enrollar su cable de alimentación.
+        Funcionamiento: Cuenta con un motor de 25 watts de potencia que se activa automáticamente ejerciendo presión con la fruta sobre el cono del exprimidor. Jugueras y exprimidores Philips"
     },
     {
         "id":"007",
         "articulo":"HELADERA",
+        "categoria": "Electrohogar",
         "marca":"Bambi",
         "precio":56000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_989104-MLA41252482862_032020-F.webp",
-        "descripcion1":"365 LTS",
-        "descripcion2":"Clase A++"
+        "descripcion1":"265 LTS",
+        "descripcion2":"Clase A++",
+        "descripcion3":"Modelo: 2f1200pa Color: Gris Medidas: 1780 x 59,5 x 47 cm Peso: 49 kg Origen: Argentina 
+        Diseño: La heladera 2F1200Pa cuenta con una estética moderna y sofisticada. En su interior, se encuentra dividida por diferentes comportamientos que permiten mantener la frescura natural de los alimentos. Dispone de 3 estantes, bandejón con tapa y crisper con tapa. Por otro lado cuenta con balcones desmontables, porta botellas y contenedor de huevos.
+        Consumo energético: Este modelo posee clasificación A, haciéndola eficiente en materia energética. A su vez, cuenta con termostato mecánico en refrigerador.
+        Capacidad: El volumen total de almacenamiento es de 239 litros. El refrigerador de la heladera es de 179 litros y mientras que su freezer es de 60 litros."
     },
     {
         "id":"008",
         "articulo":"TV SMART",
+        "categoria": "Tv, Audio y Video",
         "marca":"Noblex",
         "precio":71000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_966284-MLA47150753167_082021-F.webp",
         "descripcion1":"Tecnologia Smart",
-        "descripcion2":"55P - Resolucion 4K"
+        "descripcion2":"50P - Resolucion 4K",
+        "descripcion3":"Modelo: DK50X6500 Color: Negro Medidas: 66 x 111 x 7 cm Peso: 10 kg Origen: Argentina 
+        Navegá por la web Gracias a su conexión WiFi conseguirás navegar por internet de manera inalámbrica y utilizar tus apps preferidas, como YouTube y Netflix. También, incluye control parental que le permitirá a tu familia tener una conexión más segura.
+        Conectá tu dispositivos: Mediante sus entradas HDMI podrás conectar reproductores de video, consolas de juegos y notebooks. También, a través de su puerto USB, lograrás reproducir contenido multimedia (música, fotos, videos) almacenados en dispositivos externos como tablets, smartphones y pendrives. Además, cuenta con conexión Bluetooth.
+        Descripción: El smart TV Noblex DK50X6500 posee una excelente pantalla LED de 50 pulgadas, resolución 4K (3840 x 2160 p) con la que disfrutarás de ver todas tus series, videos y películas favoritas."
     },
     {
         "id":"009",
         "articulo":"TV SMART",
+        "categoria": "Tv, Audio y Video",
         "marca":"Noblex",
         "precio":124000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_802308-MLA47031543335_082021-F.webp",
         "descripcion1":"Tecnologia Smart",
-        "descripcion2":"75P - Resolucion 8K"
+        "descripcion2":"75P - Resolucion 8K",
+        "descripcion3":"Modelo: DK75X7800 Color: Negro Medidas: 96 x 177 x 9 cm Peso: 33 kg Origen: Argentina 
+        Diseño: El Smart TV Samsung UN75AU8000GCFV posee un diseño elegante y ultradelgado. Con su pantalla de 75 pulgadas y resolución 4K UHD lograrás tener imágenes claras y nítidas, para disfrutar de todo tu contenido multimedia sin perderte ningún detalle. Además, gracias a su Clean Cable Solution, podrás mantener todos los cables ordenados y ocultos, y reducir el desorden. 
+        Imagen: Su procesador Crystal 4K te garantizará una gran calidad de imágen y expresiones de color más realistas, gracias a su sofisticada tecnología de Color Mapping. Además, su característica de alto rango dinámico (HDR) optimiza los niveles de luz del televisor, brindando un gran espectro de colores y detalles visuales, mientras que Dynamic Crystal Color ofrece una gran gama de tonos de colores.
+        Asistente de voz: Todos los asistentes de voz están incorporados en el smart TV Samsung. Podrás elegir tu asistente favorito: Bixby, Alexa o Google, y tener una experiencia de entretenimiento óptima con un control más que avanzado para tu hogar."
     },
     {
         "id":"010",
         "articulo":"COCINA",
+        "categoria": "Electrohogar",
         "marca":"Florencia",
         "precio":47000,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_749042-MLA43115390520_082020-F.webp",
         "descripcion1":"Facil Limpieza",
-        "descripcion2":"Timer - Termostato"
+        "descripcion2":"Timer - Termostato",
+        "descripcion3":"Modelo: 5518f Color:Blanco Medidas: 85 x 56 x 60 cm Peso: 44 kg Origen: Argentina 
+        Diseño: Florencia 5518F es una cocina de diseño clásico en color acero inoxidable (solo en el frente, no en los laterales) que cuenta con cuatro hornallas y horno. Dispone de 1 quemador grande, 2 medianos y 1 chico y todos tienen válvulas de seguridad que cortan el suministro de gas, si por alguna razón se apagan las llamas. Incorpora, a su vez, plancha de acero inoxidable y rejillas anti vuelco enlozadas.
+        Dimensiones: Sus medidas estándar de 85 cm de alto; 56 cm de ancho y 60 cm de profundidad hacen que se ajuste a cualquier tipo de cocina.
+        Características especiales: La 5518F dispone de una puerta con visor de doble vidrio templado con freno y desmontable; respaldo de vidrio y cajón parrilla rebatible. Por otro lado, el enlozado del horno y la parrilla son de fácil limpieza."
     },
     {
         "id":"011",
         "articulo":"PAVA ELECTRICA",
+        "categoria": "Pequeños electrodomesticos",
         "marca":"Atma",
         "precio":8200,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_975590-MLA43581344129_092020-F.webp",
         "descripcion1":"Regulador de Temperatura",
-        "descripcion2":"1.5 LTS"
+        "descripcion2":"1.5 LTS",
+        "descripcion3":"Modelo: PE1821NAP Color: Negro Capacidad: 1,7 LTS cm Peso: 1,1 kg Origen: Argentina 
+        Diseño: La pava eléctrica Atma PE1821NAP tiene un diseño clásico en color negro y una capacidad de 1,7 litros. Posee indicador de nivel de agua. Corta automáticamente al obtener la temperatura deseada del agua y es ideal para tomar mate, té, café u otras infusiones. También viene con placa calentadora de acero inoxidable; enrolla cable y giro 360º, para tener mayor comodidad en la conexión. Por otro lado, su filtro de doble acción alarga la vida útil de la jarra, brindando mejor calidad de agua caliente y evitando que se incrusten sólidos en sus paredes interiores."
     },
     {
         "id":"012",
         "articulo":"PAVA ELECTRICA",
+        "categoria": "Pequeños electrodomesticos",
         "marca":"Kanji",
         "precio":4500,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_706404-MLA40124922258_122019-F.webp",
         "descripcion1":"Indicador de Nivel de Agua",
-        "descripcion2":"1.7 LTS"
+        "descripcion2":"1.7 LTS",
+        "descripcion3":"Modelo: K2801 Color: Acero Capacidad: 1,8 LTS cm Peso: 0,9 kg Origen: China 
+        Diseño: Pava electrica de acero inoxidable con corte automatico al hervir, con capacidad de 1,8 Lts, indicador luminoso de encendido, tapa abatible, proteccion por falta de agua, base inalambrica 360º."
     },
     {
         "id":"013",
         "articulo":"CAFETERA",
+        "categoria": "Pequeños electrodomesticos",
         "marca":"Oster",
         "precio":54500,
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_877665-MLA48279635262_112021-F.webp",
         "descripcion1":" Cafe molido o capsulas (Nespresso)",
-        "descripcion2":"Sistema termico avanzado"
+        "descripcion2":"Sistema termico avanzado",
+        "descripcion3":"Modelo: OEC8501 Color: Acero Sistema de Cafetera: Cápsulas Presion: 20 bares Origen: Brazil 
+        Diseño: La cafetera expresso Oster OEC8501 cuenta con un sofisticado y elegante diseño que se adaptará a tu cocina y le dará un gran estilo. Gracias a sus medidas (20,5 x 27 x 29 cm) encajará perfectamente en cualquier lugar. Por su característica 2 en 1, podrás utilizarla tanto para café molido como para cápsulas compatibles. Además, posee un espumador de leche y calentador de tazas, para que puedas disfrutar al máximo de tu café.
+        Características: La Oster OEC8501 cuenta con bomba de presión de 20 bares y una potencia de 850 watts. Además, tanto la caldera como el filtro son de acero inoxidable, otorgándole gran resistencia y mayor vida útil. Sus comandos son prácticos, intuitivos y fáciles de utilizar."
     }
     ]

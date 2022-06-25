@@ -20,7 +20,7 @@ export default function MediaCard({ detail }) {
           {detail.articulo} {detail.marca}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {detail.descripcion1}
+          {detail.descripcion3}
         </Typography>
       </CardContent>
       <CardActions>

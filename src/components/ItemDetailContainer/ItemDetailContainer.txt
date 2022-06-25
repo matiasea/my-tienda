@@ -63,8 +63,7 @@
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_679153-MLA40987656790_032020-F.webp",
         "descripcion1":"0,5 LTS",
         "descripcion2":"300 W",
-        "descripcion3":"Modelo: HR2738/00 Color: Blanco Peso: 0,8 kg Origen: China 
-        Diseño: El exprimidor Philips HR-2738 cuenta con un diseño compacto de fácil almacenamiento y una jarra de 0.5 litros de capacidad con boquilla anti goteo. Además, las piezas son desmontables para facilitar su limpieza y son aptas para lavado en lavavajillas. Por otro lado, dispone en su base de un espacio de guardado para enrollar su cable de alimentación. Funcionamiento: Cuenta con un motor de 25 watts de potencia que se activa automáticamente ejerciendo presión con la fruta sobre el cono del exprimidor. Jugueras y exprimidores Philips"
+        "descripcion3":"Modelo: HR2738/00 Color: Blanco Peso: 0,8 kg Origen: China. Diseño: El exprimidor Philips HR-2738 cuenta con un diseño compacto de fácil almacenamiento y una jarra de 0.5 litros de capacidad con boquilla anti goteo. Además, las piezas son desmontables para facilitar su limpieza y son aptas para lavado en lavavajillas. Por otro lado, dispone en su base de un espacio de guardado para enrollar su cable de alimentación. Funcionamiento: Cuenta con un motor de 25 watts de potencia que se activa automáticamente ejerciendo presión con la fruta sobre el cono del exprimidor. Jugueras y exprimidores Philips"
     },
     {
         "id":"007",

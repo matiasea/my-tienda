@@ -52,8 +52,7 @@
         "img":"https://http2.mlstatic.com/D_NQ_NP_2X_766023-MLA47794441020_102021-F.webp",
         "descripcion1":"1000 W",
         "descripcion2":"Capacidad 2 panes",
-        "descripcion3":"Modelo: TO20RN Color: Rojo Peso: 1,9 kg Origen: Argentina 
-        Capacidad: Esta tostadora tiene capacidad para 2 rebanadas de pan. Diseño: La tostadora ATMA TO20RN cuenta con un moderno diseño, que incluye bandeja recolectora de migas y base antideslizante. Funciones: Gracias a su potencia de 700 watts y 7 niveles de tostado, podrás armar tus tostadas favoritas. Además, cuenta con las funciones cancelar, recalentar y descongelar."
+        "descripcion3":"Modelo: TO20RN Color: Rojo Peso: 1,9 kg Origen: Argentina. Capacidad: Esta tostadora tiene capacidad para 2 rebanadas de pan. Diseño: La tostadora ATMA TO20RN cuenta con un moderno diseño, que incluye bandeja recolectora de migas y base antideslizante. Funciones: Gracias a su potencia de 700 watts y 7 niveles de tostado, podrás armar tus tostadas favoritas. Además, cuenta con las funciones cancelar, recalentar y descongelar."
     },
     {
         "id":"006",

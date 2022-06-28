@@ -1,7 +1,8 @@
 .itemList{
     
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 40px 0 40px 0;
-    gap: 40px
+    gap: 40px;
+    border: 1 solid rgb(80, 78, 78);
 }

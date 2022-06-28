@@ -1,5 +1,3 @@
-
-
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -7,10 +5,10 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import ItemCount from "../ItemCount/itemCount";
-import "./item.css"
 
 
-export default function Item({data}) {
+
+export default function ItemCategories({props}) {
   return (
     <Card  sx={{ maxWidth: 345 }}>
       <CardActionArea >
@@ -18,23 +16,24 @@ export default function Item({data}) {
             
           component="img"
           width="100"
-          image={data.img}
+          image={props.img}
           alt="electro"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {data.articulo} {data.marca}
+            {props.articulo} {props.marca}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {data.descripcion1} {data.descripcion2}
+            {props.descripcion1} {props.descripcion2}
             </Typography>
             <Typography gutterBottom variant="h5" component="div">
-            ${data.precio}
+            ${props.precio}
           </Typography>
         </CardContent>
         
       </CardActionArea>
       
+      <ItemCount/> 
       
     </Card>
   );

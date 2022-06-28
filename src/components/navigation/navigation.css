@@ -1,14 +1,19 @@
 .nav1{
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     list-style-type: none;
-    background-color: rgb(5, 5, 32);
-    color: rgb(0, 255, 191);
+    background-color: rgb(41, 41, 43);
+    color: rgb(250, 87, 58);
     font-weight: bold;
     font-size: 15px;
     font-family: sans-serif;
     width: 100%;
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
 }
 
 .nav1 li{

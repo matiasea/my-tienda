@@ -7,13 +7,13 @@ import data from "../../components/Data/data";
 
 
 const Detail = () => {
-    const [detailProduct, setDetailProduct] = useState ([]);
-    
+    const [detailProduct, setDetailProduct] = useState ([]);    
     
     let {id} = useParams();
 
     useEffect (() => {
-        axios(`https://raw.githubusercontent.com/matiasea/my-tienda/main/src/components/ItemDetailContainer/ItemDetailContainer.txt/${id}`).then((res) => setDetailProduct(res.data)
+        axios(`https://raw.githubusercontent.com/matiasea/my-tienda/main/src/components/ItemDetailContainer/ItemDetailContainer.txt/${id}`)
+        .then((res) => setDetailProduct(res.data)
         );
     }, [id]);
     

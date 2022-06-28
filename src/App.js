@@ -3,8 +3,12 @@ import './App.css';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 
 //--------COMPONENTS ----------------
+import Header from './components/Header/Header';
 import Navigation from "./components/navigation/navigation";
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import NavCategories from './components/Categories/navCategories';
+import FilterCategoriesElectrohogar from './components/Categories/categoriesElectrohogar';
+import FilterCategoriesPequeElectro from './components/Categories/categoriesPequenosElectro';
+import FilterCategoriesTvAudioVideo from './components/Categories/categoriesTvAudioVideo';
 
 //-------- VIEWS ---------------------
 import Home from "./views/Home/Home"
@@ -19,10 +23,14 @@ import Detail from "./views/Detail/Detail"
 
 function App() {
   return (
-    <BrowserRouter>   
-    <Navigation/>   
-      <div className="App">
-            
+    <BrowserRouter>  
+    <Header/>     
+    <Navigation/> 
+    <NavCategories />
+    <FilterCategoriesElectrohogar/>
+     
+
+      <div className="App">            
         <Routes> 
           <Route path="/" element={<Home />}/> 
           <Route path="/Product" element={<Product />}/> 
@@ -35,6 +43,7 @@ function App() {
         <h3>Almada Matias - React</h3>
       </div>
     </BrowserRouter>
+  
   );
 }
 

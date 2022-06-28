@@ -1,6 +1,7 @@
 const data = [
     {
         "id":"001", 
+        "categoria": "ELECTROHOGAR",
          "articulo":"LAVARROPAS",
          "marca":"Philco",
          "precio":58000,
@@ -10,6 +11,7 @@ const data = [
     },
     {
         "id":"002",
+        "categoria": "ELECTROHOGAR",
         "articulo":"HELADERA",
         "marca":"Patrick",
         "precio":65000,
@@ -19,6 +21,7 @@ const data = [
     },
     {
         "id":"003",
+        "categoria": "ELECTROHOGAR",
         "articulo":"COCINA",
         "marca":"Longvie",
         "precio":49000,
@@ -28,6 +31,7 @@ const data = [
     },
     {
         "id":"004",
+        "categoria": "TV, AUDIO Y VIDEO",
         "articulo":"TV SMART",
         "marca":"Samsung",
         "precio":35000,
@@ -37,6 +41,7 @@ const data = [
     },
     {
         "id":"005",
+        "categoria": "PEQUEÑOS ELECTRODOMESTICOS",
         "articulo":"TOSTADORA",
         "marca":"Atma",
         "precio":5000,
@@ -46,6 +51,7 @@ const data = [
     },
     {
         "id":"006",
+        "categoria": "PEQUEÑOS ELECTRODOMESTICOS",
         "articulo":"EXPRIMIDOR",
         "marca":"Philips",
         "precio":4500,
@@ -55,6 +61,7 @@ const data = [
     },
     {
         "id":"007",
+        "categoria": "ELECTROHOGAR",
         "articulo":"HELADERA",
         "marca":"Bambi",
         "precio":56000,
@@ -64,6 +71,7 @@ const data = [
     },
     {
         "id":"008",
+        "categoria": "TV, AUDIO Y VIDEO",
         "articulo":"TV SMART",
         "marca":"Noblex",
         "precio":71000,
@@ -73,6 +81,7 @@ const data = [
     },
     {
         "id":"009",
+        "categoria": "TV, AUDIO Y VIDEO",
         "articulo":"TV SMART",
         "marca":"Noblex",
         "precio":124000,
@@ -82,6 +91,7 @@ const data = [
     },
     {
         "id":"010",
+        "categoria": "ELECTROHOGAR",
         "articulo":"COCINA",
         "marca":"Florencia",
         "precio":47000,
@@ -91,6 +101,7 @@ const data = [
     },
     {
         "id":"011",
+        "categoria": "PEQUEÑOS ELECTRODOMESTICOS",
         "articulo":"PAVA ELECTRICA",
         "marca":"Atma",
         "precio":8200,
@@ -100,6 +111,7 @@ const data = [
     },
     {
         "id":"012",
+        "categoria": "PEQUEÑOS ELECTRODOMESTICOS",
         "articulo":"PAVA ELECTRICA",
         "marca":"Kanji",
         "precio":4500,
@@ -109,6 +121,7 @@ const data = [
     },
     {
         "id":"013",
+        "categoria": "PEQUEÑOS ELECTRODOMESTICOS",
         "articulo":"CAFETERA",
         "marca":"Oster",
         "precio":54500,

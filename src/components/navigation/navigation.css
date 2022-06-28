@@ -1,7 +1,6 @@
 .nav1{
     display: flex;
     justify-content: flex-end;
-    padding-right: 5%;
     align-items: center;
     list-style-type: none;
     background-color: rgb(5, 5, 32);
@@ -9,6 +8,7 @@
     font-weight: bold;
     font-size: 15px;
     font-family: sans-serif;
+    width: 100%;
 }
 
 .nav1 li{

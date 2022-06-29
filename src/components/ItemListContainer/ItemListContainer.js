@@ -1,39 +1,30 @@
-import "./ItemListContainer.css"
+import "./ItemListContainer.css";
 import Item from "../Item/item";
 import ItemDetailContainer from "../ItemDetailContainer/itemDetailContainer";
 import data from "../Data/data";
 import React, { useState, useEffect } from "react";
 import "./ItemListContainer.css";
 import { Link } from "react-router-dom";
-
-
+import axios from "axios";
+import ItemList from "../ItemList/ItemList";
 
 const ItemListContainer = () => {
-     const [ detail, setDetail ] = useState ([]);
+  const [productos, setProductos] = useState([]);
 
-    useEffect(() => {
-        fetch('https://raw.githubusercontent.com/matiasea/my-tienda/main/src/components/ItemDetailContainer/ItemDetailContainer.txt')
-        .then(response => response.json())
-        .then(json => setDetail(json))
-  
-        
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products").then(
+      (res) => res.json().then((json) => setProductos(json)) // // Mati este es el enlace que vas a tener que reemplazar, te creé un Data.json en Dataese probá subirlo a tu git y después reemplazá este enlace de api que puse por ese .json
+    );
+    console.log(productos);
+  }, []);
 
-    }, []); 
-    return ( 
-        <div className="itemList">
-            {data.map(data => {
-                return (
-                <Link to={`/detail/${data.id}`} >
-                    <Item key={data.id} data={data} />
-                </Link>
-                )
-            })}
-                
-            {/* {detail.map((detail) => (
-                <ItemDetailContainer key={detail.id} detail={detail}/>
-            ))} */}
-        </div>
-    )
-}
+  console.log(productos);
+
+  return (
+    <div className="itemListCont">
+      <ItemList productos={productos} />
+    </div>
+  );
+};
 
 export default ItemListContainer;

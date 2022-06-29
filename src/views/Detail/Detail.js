@@ -5,27 +5,23 @@ import ItemDetailContainer from "../../components/ItemDetailContainer/itemDetail
 import ItemCount from "../../components/ItemCount/itemCount";
 import data from "../../components/Data/data";
 
-
 const Detail = () => {
-    const [detailProduct, setDetailProduct] = useState ([]);    
-    
-    let {id} = useParams();
+  const [detailProduct, setDetailProduct] = useState([]);
 
-    useEffect (() => {
-        axios(`https://raw.githubusercontent.com/matiasea/my-tienda/main/src/components/ItemDetailContainer/ItemDetailContainer.txt/${id}`)
-        .then((res) => setDetailProduct(res.data)
-        );
-    }, [id]);
-    
+  let { id } = useParams();
 
-    return(
+  useEffect(() => {
+    fetch(`https://fakestoreapi.com/products/${id}`).then((res) =>
+      res.json().then((json) => setDetailProduct(json))
+    );
+    console.log(detailProduct);
+  }, [id]);
+
+  return (
     <div>
-        {detailProduct.map((detail) => {
-            <div key={data.id}>
-            return <ItemDetailContainer data={detail} />
-            </div>
-        })}
-    </div>)
+      <ItemDetailContainer data={detailProduct} />
+    </div>
+  );
 };
 
 export default Detail;

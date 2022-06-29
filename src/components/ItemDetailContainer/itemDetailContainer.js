@@ -1,26 +1,34 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Button from "@mui/material/Button";
+import Typography from "@mui/material/Typography";
 
-const ItemDetailContainer = ({ detail }) => {
+const ItemDetailContainer = ({ data }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
+      <CardContent>
+      <Typography gutterBottom variant="h5" component="div">
+              {data.title}
+            </Typography>
+      </CardContent>
       <CardMedia
         component="img"
-        height="140"
-        image={detail.img}
-        alt="green iguana"
+        width="100"
+        image={data.image}
+        alt="electro"
       />
       <CardContent>
+      <Typography gutterBottom variant="h5" component="div">
+              ${data.price}
+            </Typography>
         <Typography gutterBottom variant="h5" component="div">
-          {detail.articulo} {detail.marca}
+          {data.article}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {detail.descripcion3}
+          {data.description}
         </Typography>
       </CardContent>
       <CardActions>
@@ -29,6 +37,6 @@ const ItemDetailContainer = ({ detail }) => {
       </CardActions>
     </Card>
   );
-}
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;

@@ -3,12 +3,17 @@ import data from '../Data/data';
 import ItemCategories from './itemCategories';
 
 
+
 const FilterCategoriesElectrohogar = () => {
 const Categories = data.filter(function(cate){
 return cate.categoria === "ELECTROHOGAR"; 
   
-  })
+  },[])
 console.log(Categories)
+{Categories.map((Categories) => {
+  return (<div> hola
+    </div>)
+} )}
 
   /*   const [busq, setBusq] = useState ([Categories]);
   return (
@@ -21,3 +26,4 @@ console.log(Categories)
 };
 
 export default FilterCategoriesElectrohogar;
+

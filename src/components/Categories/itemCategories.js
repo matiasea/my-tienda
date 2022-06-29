@@ -8,7 +8,7 @@ import ItemCount from "../ItemCount/itemCount";
 
 
 
-export default function ItemCategories({props}) {
+const ItemCategories = ({props}) => {
   return (
     <Card  sx={{ maxWidth: 345 }}>
       <CardActionArea >
@@ -37,4 +37,6 @@ export default function ItemCategories({props}) {
       
     </Card>
   );
-}
+};
+
+export default ItemCategories;

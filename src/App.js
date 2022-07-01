@@ -15,6 +15,8 @@ import Contact from "./views/Contact/Contact";
 import Product from "./views/Product/Product";
 import Postventa from "./views/Postventa/Postventa";
 import Detail from "./views/Detail/Detail";
+import Cart from "./views/Carrito/Carrito";
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
           <Route path="/Postventa" element={<Postventa />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/detail/:id" element={<Detail />} />
+          <Route path="/cart" element={<Cart /> } />
         </Routes>
       </div>
     </BrowserRouter>

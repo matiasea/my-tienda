@@ -6,6 +6,13 @@ import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
+//COMPONENTS -----------------------------
+import ItemCount from "../ItemCount/itemCount";
+
+
+
+
+
 const ItemDetailContainer = ({ data }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -35,6 +42,9 @@ const ItemDetailContainer = ({ data }) => {
         <Button size="small">AGREGAR AL CARRITO</Button>
         <Button size="small">AGREGAR A FAVORITOS</Button>
       </CardActions>
+      <ItemCount />
+
+    
     </Card>
   );
 };

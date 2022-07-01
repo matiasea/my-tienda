@@ -1,7 +1,7 @@
 
 import LocalGroceryStoreTwoToneIcon from '@mui/icons-material/LocalGroceryStoreTwoTone';;
 
-const CartWidget = () => {
+const CartIcon = () => {
     return (    
         <div>
             <LocalGroceryStoreTwoToneIcon />
@@ -9,4 +9,4 @@ const CartWidget = () => {
         );
 };
 
-export default CartWidget;
+export default CartIcon;

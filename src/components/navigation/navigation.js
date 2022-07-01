@@ -1,6 +1,6 @@
 import "./navigation.css"
 import { Link } from "react-router-dom";
-import CartWidget from "../carrito/cartWidget"
+import CartIcon from "../Cart/cartIcon";
 
 const Navigation = () => {
     return (
@@ -10,7 +10,7 @@ const Navigation = () => {
                 <Link to="/Product" >Nustros Productos</Link>
                 <Link to="/Postventa" >Postventa</Link>
                 <Link to="/Contact" >Contacto</Link>
-                <CartWidget/>
+                <CartIcon/>
             </ul>
         </nav>
     )

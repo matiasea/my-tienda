@@ -1,4 +1,9 @@
-import * as React from "react";
+import React, {useContext} from 'react'
+
+//-------Context---------------
+import { ItemsCartContext } from '../Context/ItemCartContext';
+
+
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -9,11 +14,15 @@ import Typography from "@mui/material/Typography";
 //COMPONENTS -----------------------------
 import ItemCount from "../ItemCount/itemCount";
 
-
-
-
-
 const ItemDetailContainer = ({ data }) => {
+const { AddToCart } = useContext(ItemsCartContext);
+
+const agregarAlCarrito = () => {
+  const detalle = { ...data };
+  AddToCart(detalle);
+};
+
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardContent>
@@ -39,8 +48,8 @@ const ItemDetailContainer = ({ data }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">AGREGAR AL CARRITO</Button>
-        <Button size="small">AGREGAR A FAVORITOS</Button>
+        <Button size="small" onClick={agregarAlCarrito}>AGREGAR AL CARRITO</Button>
+        
       </CardActions>
       <ItemCount />
 

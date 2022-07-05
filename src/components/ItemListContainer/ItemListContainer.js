@@ -13,7 +13,7 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products").then(
-      (res) => res.json().then((json) => setProductos(json)) // // Mati este es el enlace que vas a tener que reemplazar, te creé un Data.json en Dataese probá subirlo a tu git y después reemplazá este enlace de api que puse por ese .json
+      (res) => res.json().then((json) => setProductos(json)) 
     );
     console.log(productos);
   }, []);
@@ -23,6 +23,7 @@ const ItemListContainer = () => {
   return (
     <div className="itemListCont">
       <ItemList productos={productos} />
+      
     </div>
   );
 };

@@ -9,7 +9,7 @@ const Categories = data.filter(function(cate){
 return cate.categoria === "ELECTROHOGAR"; 
   
   },[])
-console.log(Categories)
+
 {Categories.map((Categories) => {
   return (<div> hola
     </div>)

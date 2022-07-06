@@ -5,7 +5,7 @@ import { ItemsCartContext } from '../Context/ItemCartContext';
 
 
 const ItemsCart = () => {
-    const [itemsCart, setItemsCart] = useContext(ItemsCartContext);
+    const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
     
 
   return (

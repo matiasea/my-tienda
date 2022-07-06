@@ -9,7 +9,7 @@ import Navigation from '../navigation/navigation'
 
 
 const Header = () => {
-  const [itemsCart, setItemsCart, AddToCart] = useContext(ItemsCartContext);
+  const { itemsCart, setItemsCart, AddToCart } = useContext(ItemsCartContext);
 
   const cartDelete = []; 
   return (

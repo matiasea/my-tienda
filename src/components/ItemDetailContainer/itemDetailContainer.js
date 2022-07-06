@@ -51,7 +51,7 @@ const agregarAlCarrito = () => {
         <Button size="small" onClick={agregarAlCarrito}>AGREGAR AL CARRITO</Button>
         
       </CardActions>
-      <ItemCount />
+
 
     
     </Card>

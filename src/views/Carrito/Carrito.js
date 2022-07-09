@@ -15,8 +15,9 @@ const Cart = () => {
       <div>
       <ItemsCart />
       </div>
+      { itemsCart.length > 0 ? (<button onClick={() => setItemsCart(cartDelete)} type="button" class="btn btn-dark" >Vaciar Carrito</button>) : null }
       
-    <button onClick={() => setItemsCart(cartDelete)} type="button" class="btn btn-dark" >Vaciar Carrito</button>
+    
     </div>
   )
 }

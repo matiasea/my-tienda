@@ -18,7 +18,7 @@ const ItemsCart = () => {
       return (
       <div>
         <h2> Tu Carrito esta vacío</h2>
-        <Link to="/Product"><Button> Ir a Comprar </Button></Link>
+        <Link to="/Product"><Button type="button" class="btn btn-dark"> Ir a Comprar </Button></Link>
       </div>)     
     }
     return (

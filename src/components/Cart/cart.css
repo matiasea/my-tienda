@@ -1,4 +1,27 @@
 .ItemCart{
     border: solid 2px black;
-    display: flex
+    display: flex;
+}
+
+.btn-eliminar {
+    width: 30px;
+    border: none;
+}
+
+.numberCart {
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+
+}
+
+.total {
+    align-items: center;
+    align-content: center;
+    color: rgb(68, 66, 66);
+    font-size: larger;
+    margin-left: auto;
+    margin-right: auto;
+   
 }

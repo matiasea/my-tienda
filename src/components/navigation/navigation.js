@@ -7,14 +7,14 @@ import { ItemsCartContext } from "../Context/ItemCartContext";
 const Navigation = () => {
     const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
     return (
-        <nav>
-            <ul className="nav1">
-                <Link to="/" >Inicio</Link>
-                <Link to="/Product" >Nustros Productos</Link>
-                <Link to="/Postventa" >Postventa</Link>
-                <Link to="/Contact" >Contacto</Link>
+        <nav className='nav1'>
+            <ul className="nav justify-content-center">
+                <Link to="/" className="nav-item nav-link active" aria-current="page">Inicio</Link>
+                <Link to="/Product" className="nav-item nav-link active" aria-current="page">Nustros Productos</Link>
+                <Link to="/Postventa" className="nav-item nav-link active" aria-current="page">Postventa</Link>
+                <Link to="/Contact" className="nav-item nav-link active" aria-current="page">Contacto</Link>
                 <CartIcon/>
-                <p> {itemsCart.length} </p>
+                
 
             </ul>
         </nav>

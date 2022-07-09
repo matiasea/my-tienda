@@ -1,13 +1,9 @@
 .nav1{
-    display: flex;
-    align-items: center;
-    list-style-type: none;
+    opacity: 95%;
     background-color: rgb(41, 41, 43);
-    color: rgb(250, 87, 58);
     font-weight: bold;
-    font-size: 15px;
-    font-family: sans-serif;
-    width: 100%;
+    font-size: larger;
+    font-family:'Lucida Sans';
 }
 ul {
 	display: flex;

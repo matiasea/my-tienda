@@ -2,24 +2,39 @@ import React, {useContext} from 'react';
 import { ItemsCartContext } from '../Context/ItemCartContext'
 import ItemCount from '../ItemCount/itemCount';
 import "./cart.css"
+import imgEliminar from "../Cart/eliminar.png"
 
 
-const ItemCart = ({itemCart}) => {
+const ItemCart = ({itemsCart}) => {
 
-  const { ItemsCart, setItemsCart, AddToCart }= useContext(ItemsCartContext);
+  const { i, seti, AddToCart, IdProd, ItemRemove }= useContext(ItemsCartContext);
+
+  const eliminarDelCarrito = () => {
+    {ItemRemove()}
+  };   
 
   return (
     <div className='ItemCart'>
-        <ul>
-            <li>Categoria: {itemCart.image}  </li>
-            <li>Articulo: {itemCart.title}</li>
-            <li>Precio: {itemCart.price}</li>
-            <ItemCount />      
-            
-            
-        </ul>
-        
-    </div>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Articulo</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Cantidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">{itemsCart.image}</th>
+      <td>{itemsCart.title}</td>
+      <td>${itemsCart.price}</td>
+      <td><ItemCount /></td>
+      <td><button onClick={eliminarDelCarrito} type="button" class="btn btn-light"> <img src={imgEliminar} className="btn-eliminar" /> </button></td>
+    </tr>
+  </tbody>
+</table>
+</div>
   )
 }
 

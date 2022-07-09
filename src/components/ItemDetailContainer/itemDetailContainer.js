@@ -13,9 +13,11 @@ import Typography from "@mui/material/Typography";
 
 //COMPONENTS -----------------------------
 import ItemCount from "../ItemCount/itemCount";
+import TerminarCompraButton from '../Cart/TerminarCompraButton';
 
 const ItemDetailContainer = ({ data }) => {
-const { AddToCart } = useContext(ItemsCartContext);
+const { itemsCart, AddToCart } = useContext(ItemsCartContext);
+
 
 const agregarAlCarrito = () => {
   const detalle = { ...data };
@@ -48,7 +50,8 @@ const agregarAlCarrito = () => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={agregarAlCarrito}>AGREGAR AL CARRITO</Button>
+        <Button type="button" class="btn btn-dark" size="small" onClick={agregarAlCarrito}>AGREGAR AL CARRITO</Button>
+        {itemsCart.length > 0 ? (<TerminarCompraButton />) : null}
         
       </CardActions>
 

@@ -6,7 +6,7 @@ const TerminarCompraButton = () => {
   return (
       <div>
             <Link to="/cart">
-            <button> TERMINAR COMPRA </button>
+            <button className='btn btn-dark' size="small"> TERMINAR COMPRA </button>
             </Link>
         </div>
    

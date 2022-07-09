@@ -12,12 +12,11 @@ const Cart = () => {
   const cartDelete = []; 
   return (
     <div>
-      <p> cart: {itemsCart.length} </p>
       <div>
       <ItemsCart />
       </div>
       
-    <button onClick={() => setItemsCart(cartDelete)}>Vaciar Carrito</button>;
+    <button onClick={() => setItemsCart(cartDelete)} type="button" class="btn btn-dark" >Vaciar Carrito</button>
     </div>
   )
 }

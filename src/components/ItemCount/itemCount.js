@@ -10,7 +10,7 @@ import TerminarCompraButton from "../Cart/TerminarCompraButton";
 
 const ItemCount = () => {
     const stockDisponible = 3;
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(1)
     const onAdd = () => {
         if (counter < stockDisponible ) {    
         setCounter(counter + 1)
@@ -20,7 +20,7 @@ const ItemCount = () => {
     };
 
     const onRemove = () => {
-        if (counter > 0) {    
+        if (counter > 1) {    
         
         setCounter(counter - 1)
     }else{
@@ -32,10 +32,9 @@ const ItemCount = () => {
 
     return (
         <div className="itemCount">
-        <button onClick={onAdd}>+</button>
+        <button onClick={onAdd} type="button" class="btn btn-dark" >+</button>
         <p>{counter}</p>
-        <button onClick={onRemove}>-</button>
-        {counter > 0 ? (<TerminarCompraButton />) : null }
+        <button onClick={onRemove} type="button" class="btn btn-dark" >-</button>
         </div>
 
 

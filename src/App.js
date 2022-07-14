@@ -1,5 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+//--------FIREBASE -------------------
+import { db } from "./firebase/fireBaseConfig";
+import { collection, query, getDocs } from "firebase/firestore";
 
 //--------CONTEXT-------------------
 import { ItemsCartProvider } from "./components/Context/ItemCartContext";
@@ -22,7 +26,7 @@ import Cart from "./views/Carrito/Carrito";
 import ItemsCart from "./components/Cart/Cart";
 
 
-function App() {
+ function App() {
   return (
     
     <BrowserRouter>
@@ -41,10 +45,12 @@ function App() {
           <Route path="/cart" element={<Cart /> } />
         </Routes>
       </div>
+       
       </ItemsCartProvider>
     </BrowserRouter>
     
   );
 }
 
-export default App;
+export default App; 
+

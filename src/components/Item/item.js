@@ -16,18 +16,18 @@ const Item = ({ producto }) => {
           <CardMedia
             component="img"
             width="100"
-            image={producto.image}
+            image={producto.img}
             alt="electro"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              {producto.title}
+              {producto.articulo}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {producto.descripcion1} {producto.descripcion2}
+              {producto.detalle1} {producto.detalle2}
             </Typography>
             <Typography gutterBottom variant="h5" component="div">
-              ${producto.price}
+              ${producto.precio}
             </Typography>
           </CardContent>
         </CardActionArea>

@@ -29,24 +29,24 @@ const agregarAlCarrito = () => {
     <Card sx={{ maxWidth: 345 }}>
       <CardContent>
       <Typography gutterBottom variant="h5" component="div">
-              {data.title}
+              {data.articulo}
             </Typography>
       </CardContent>
       <CardMedia
         component="img"
         width="100"
-        image={data.image}
+        image={data.img}
         alt="electro"
       />
       <CardContent>
       <Typography gutterBottom variant="h5" component="div">
-              ${data.price}
+              ${data.precio}
             </Typography>
         <Typography gutterBottom variant="h5" component="div">
           {data.article}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          {data.description}
+          {data.detalle3}
         </Typography>
       </CardContent>
       <CardActions>

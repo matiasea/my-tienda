@@ -7,7 +7,7 @@ const Home = () => {
     <div>
       <h1> 
         <FilterCategoriesElectrohogar/>
-        E-COMMERCE </h1>
+        E-COMMERCE 1 </h1>
     </div>
   );
 };

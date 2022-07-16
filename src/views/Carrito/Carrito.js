@@ -7,7 +7,7 @@ import ItemsCart from '../../components/Cart/Cart';
 import { ItemsCartContext } from '../../components/Context/ItemCartContext';
 
 const Cart = () => {
-  const {itemsCart, setItemsCart, AddToCart} = useContext(ItemsCartContext);
+  const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
 
   const cartDelete = []; 
   return (

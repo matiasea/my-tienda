@@ -2,7 +2,6 @@
 import React, {useState} from "react";
 
 import "../ItemCount/itemCount.css";
-import TerminarCompraButton from "../Cart/TerminarCompraButton";
 
 
 

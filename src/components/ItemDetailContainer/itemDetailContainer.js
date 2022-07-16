@@ -12,7 +12,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 //COMPONENTS -----------------------------
-import ItemCount from "../ItemCount/itemCount";
 import TerminarCompraButton from '../Cart/TerminarCompraButton';
 
 const ItemDetailContainer = ({ data }) => {

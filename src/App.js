@@ -23,7 +23,7 @@ import Product from "./views/Product/Product";
 import Postventa from "./views/Postventa/Postventa";
 import Detail from "./views/Detail/Detail";
 import Cart from "./views/Carrito/Carrito";
-import ItemsCart from "./components/Cart/Cart";
+import CategoryView from "./views/Category/CategoryView";
 
 
  function App() {
@@ -43,6 +43,9 @@ import ItemsCart from "./components/Cart/Cart";
           <Route path="/Contact" element={<Contact />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/cart" element={<Cart /> } />
+          <Route path="/linea/:linea" element={<CategoryView /> } />
+          
+
         </Routes>
       </div>
        

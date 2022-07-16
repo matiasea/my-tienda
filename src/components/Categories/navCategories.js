@@ -5,9 +5,11 @@ const NavCategories = () => {
     return (
         <nav>
             <ul className="categories">
-                <li to="" className="categories1">Electrohogar</li>
-                <li to="" className="categories1" >Tv, Audio y Video</li>
-                <li to="" className="categories1">Pequeños Electrodomesticos</li>
+                <Link to="/linea/electrohogar">Electrohogar</Link>
+                <Link to="/linea/tvaudiovideo" >Tv, Audio y Video</Link>
+                <Link to="/linea/pequenios" >Pequeños Electrodomesticos</Link>
+                <Link to="/linea/rodados" >Rodados</Link>
+                <Link to="/linea/tecnologia" >Tecnologia</Link>
             </ul>
         </nav>
     )

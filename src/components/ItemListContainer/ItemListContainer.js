@@ -1,11 +1,6 @@
 import "./ItemListContainer.css";
-import Item from "../Item/item";
-import ItemDetailContainer from "../ItemDetailContainer/itemDetailContainer";
-import data from "../Data/data";
 import React, { useState, useEffect } from "react";
 import "./ItemListContainer.css";
-import { Link } from "react-router-dom";
-import axios from "axios";
 import ItemList from "../ItemList/ItemList";
 
 //--------FIREBASE -------------------

@@ -1,5 +1,4 @@
 import React from "react";
-import ItemListContainer from "../../components/ItemListContainer/ItemListContainer";
 import FilterCategoriesElectrohogar from "../../components/Categories/categoriesElectrohogar";
 
 const Home = () => {

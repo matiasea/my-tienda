@@ -7,15 +7,14 @@ import { db } from "../../firebase/fireBaseConfig";
 import { collection, query, getDocs, documentId, where } from "firebase/firestore";
 
 
-const Detail = () => {
+const CategoryView = () => {
 const [ detailProduct, setDetailProduct ] = useState ([]);
 
-const  {id}  = useParams();
-console.log (id)
+const  {linea}  = useParams();
 
 useEffect (() => {
 const getDetail = async () => {
-  const q = query(collection(db, "productos"), where (documentId(), "==", id));
+  const q = query(collection(db, "productos"), where ("linea", "==", linea));
   const stockDetalle = [];
 
   const querySnapshot = await getDocs(q);
@@ -27,7 +26,7 @@ const getDetail = async () => {
 };
   getDetail();
   
-}, [id]);
+}, [linea]);
 
 return (
     <div>
@@ -39,28 +38,4 @@ return (
 
 }
 
-export default Detail;
-
-
-
-/* const Detail = () => {
-  const [detailProduct, setDetailProduct] = useState([]);
-
-  let { id } = useParams();
-
-  useEffect(() => {
-    fetch(`https://fakestoreapi.com/products/${id}`).then((res) =>
-      res.json().then((json) => setDetailProduct(json))
-    );
-    console.log(detailProduct);
-  }, [id]);
-
-  return (
-    <div>
-      <ItemDetailContainer data={detailProduct} />
-    </div>
-  );
-};
-
-export default Detail;
- */
+export default CategoryView;

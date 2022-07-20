@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
-import { useParams } from "react-router-dom";
+
 
 export const ItemsCartContext = createContext();
 
@@ -11,11 +11,14 @@ const initialState = [];
 
 export const ItemsCartProvider = ({ children }) => {
   const [itemsCart, setItemsCart] = useState(initialState);
-    
+  const [counter, setCounter] = useState(0);
+
+
   const IdProd = (id) => {
     const idEncontrado = itemsCart.find((product) => product.id === id);
     return idEncontrado === undefined ? false : true;
     };
+
 
     const AddToCart = (obj) => {
         if (!IdProd(obj.id)) {
@@ -34,8 +37,26 @@ export const ItemsCartProvider = ({ children }) => {
         const eliminarItem = itemsCart.filter((product) => product.id !== id);
         setItemsCart(eliminarItem);
         };
+      
+      const onAdd = () => {   
+          setCounter(counter + 1)}
+      
+      const onRemove = () => {
+            if (counter >= 1) {   
+            setCounter(counter - 1)}}
 
-    return (<ItemsCartContext.Provider value={{ itemsCart, IdProd, setItemsCart, AddToCart, ItemRemove }}>
+      
+      const totalProd = () => {
+              let total = 0;
+              itemsCart.forEach(({ amount, precio }) => {
+                total = total + amount * precio;
+              });
+              return total;
+            };
+
+
+      
+    return (<ItemsCartContext.Provider value={{ itemsCart, IdProd, setItemsCart, AddToCart, ItemRemove, counter, onAdd, onRemove, totalProd }}>
         {children}
         </ItemsCartContext.Provider>
         );

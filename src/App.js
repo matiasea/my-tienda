@@ -12,9 +12,6 @@ import { ItemsCartProvider } from "./components/Context/ItemCartContext";
 //--------COMPONENTS ----------------
 import Header from "./components/Header/Header";
 import NavCategories from "./components/Categories/navCategories";
-import FilterCategoriesElectrohogar from "./components/Categories/categoriesElectrohogar";
-import FilterCategoriesPequeElectro from "./components/Categories/categoriesPequenosElectro";
-import FilterCategoriesTvAudioVideo from "./components/Categories/categoriesTvAudioVideo";
 
 //-------- VIEWS ---------------------
 import Home from "./views/Home/Home";
@@ -33,7 +30,6 @@ import CategoryView from "./views/Category/CategoryView";
     <ItemsCartProvider>
       <Header />
       <NavCategories />
-      <FilterCategoriesElectrohogar />
 
       <div className="App">
         <Routes>

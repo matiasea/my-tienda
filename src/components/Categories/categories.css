@@ -1,7 +1,7 @@
 .categories{
     
     position:relative;
-    display: inline-block;
+    display: flexbox;
     padding: 5px;
     align-items: center;
     list-style-type: none;

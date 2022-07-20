@@ -1,14 +1,16 @@
 
-import React, {useState} from "react";
+import React, {useContext} from "react";
 
 import "../ItemCount/itemCount.css";
+import { ItemsCartContext } from "../Context/ItemCartContext";
 
 
 
 
 
 const ItemCount = () => {
-    const stockDisponible = 3;
+    const {counter, onAdd, onRemove} = useContext(ItemsCartContext)
+  /*   const stockDisponible = 3;
     const [counter, setCounter] = useState(1)
     const onAdd = () => {
         if (counter < stockDisponible ) {    
@@ -27,7 +29,7 @@ const ItemCount = () => {
     }
     };
 
-
+ */
 
     return (
         <div className="itemCount">

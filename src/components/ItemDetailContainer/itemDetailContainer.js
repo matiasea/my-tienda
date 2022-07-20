@@ -3,7 +3,7 @@ import React, {useContext} from 'react'
 //-------Context---------------
 import { ItemsCartContext } from '../Context/ItemCartContext';
 
-
+//-------------Mui-------------
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -13,6 +13,9 @@ import Typography from "@mui/material/Typography";
 
 //COMPONENTS -----------------------------
 import TerminarCompraButton from '../Cart/TerminarCompraButton';
+import ItemCount from '../ItemCount/itemCount';
+
+
 
 const ItemDetailContainer = ({ data }) => {
 const { itemsCart, AddToCart } = useContext(ItemsCartContext);
@@ -48,6 +51,7 @@ const agregarAlCarrito = () => {
           {data.detalle3}
         </Typography>
       </CardContent>
+      <ItemCount/>
       <CardActions>
         <Button type="button" class="btn btn-dark" size="small" onClick={agregarAlCarrito}>AGREGAR AL CARRITO</Button>
         {itemsCart.length > 0 ? (<TerminarCompraButton />) : null}

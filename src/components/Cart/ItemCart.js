@@ -15,22 +15,22 @@ const ItemCart = ({itemsCart}) => {
 
   return (
     <div className='ItemCart'>
-    <table class="table">
-  <thead>
+    <table className="table">
+  {/* <thead>
     <tr>
       <th scope="col"></th>
       <th scope="col">Articulo</th>
       <th scope="col">Precio</th>
       <th scope="col">Cantidad</th>
     </tr>
-  </thead>
+  </thead> */}
   <tbody>
     <tr>
-      <th scope="row">{itemsCart.image}</th>
-      <td>{itemsCart.title}</td>
-      <td>${itemsCart.price}</td>
-      <td><ItemCount /></td>
-      <td><button onClick={eliminarDelCarrito} type="button" class="btn btn-light"> <img src={imgEliminar} className="btn-eliminar" /> </button></td>
+      <th scope="row" className="ItemCart1"><img src={itemsCart.img} width="100px"/></th>
+      <td className="ItemCart2">{itemsCart.articulo}</td>
+      <td className="ItemCart1">${itemsCart.precio}</td>
+      <td className="ItemCart3">{itemsCart.amount} </td>
+      <td className="ItemCart4"><button onClick={eliminarDelCarrito} type="button" class="btn btn-light"> <img src={imgEliminar} className="btn-eliminar" /> </button></td>
     </tr>
   </tbody>
 </table>

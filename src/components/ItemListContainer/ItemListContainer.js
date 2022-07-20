@@ -41,25 +41,3 @@ const ItemListContainer = () => {
 }
 export default ItemListContainer;
 
-/* const ItemListContainer = () => {
-  const [productos, setProductos] = useState([]);
-
-  useEffect(() => {
-    fetch("https://fakestoreapi.com/products").then(
-      (res) => res.json().then((json) => setProductos(json)) 
-    );
-    console.log(productos);
-  }, []);
-
-  console.log(productos);
-
-  return (
-    <div className="itemListCont">
-      <ItemList productos={productos} />
-      
-    </div>
-  );
-};
-
-export default ItemListContainer;
- */

@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ItemDetailContainer from "../../components/ItemDetailContainer/itemDetailContainer";
+import Item from "../../components/Item/item";
 
 //--------FIREBASE -------------------
 import { db } from "../../firebase/fireBaseConfig";
-import { collection, query, getDocs, documentId, where } from "firebase/firestore";
+import { collection, query, getDocs, where } from "firebase/firestore";
+
+//----------ESTILOS-----------------
+import "../Category/Category.css"
+
 
 
 const CategoryView = () => {
@@ -29,9 +33,9 @@ const getDetail = async () => {
 }, [linea]);
 
 return (
-    <div>
-      {detailProduct.map ((data) => {
-        return <ItemDetailContainer data={data} />
+    <div className="category">
+      {detailProduct.map ((producto) => {
+        return <Item key={producto.id} producto={producto} />
       })}
     </div>
 )

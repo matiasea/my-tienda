@@ -1,7 +1,23 @@
 .ItemCart{
     border: solid 2px black;
     display: flex;
+    grid-template-columns: 1fr;
 }
+.ItemCart1{
+    width: 20%;
+}
+
+.ItemCart2{
+    width: 35%;
+}
+
+.ItemCart3{
+    width: 15%;
+}
+.ItemCart4{
+    width: 10%;
+}
+
 
 .btn-eliminar {
     width: 30px;
@@ -17,10 +33,11 @@
 }
 
 .total {
-    align-items: center;
-    align-content: center;
-    color: rgb(68, 66, 66);
-    font-size: larger;
+    text-align: center;
+    align-items: flex-end;
+    align-content: flex-end;
+    color: rgb(51, 51, 50);
+    font-size: large;   
     margin-left: auto;
     margin-right: auto;
    

@@ -8,9 +8,9 @@ import { Button } from '@mui/material';
 
 
 const ItemsCart = () => {
-    const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
+    const {itemsCart, setItemsCart, totalProd} = useContext(ItemsCartContext);
     const total = itemsCart.reduce( (acc, item ) => 
-     acc + item.price, 0)
+     acc + item.precio, 0)
     
     console.log(total)
 
@@ -23,12 +23,22 @@ const ItemsCart = () => {
     }
     return (
     <div>
+      <table className="table">
+   <thead>
+      <th scope="col" className="ItemCart1"></th>
+      <th scope="col" className="ItemCart2">Articulo</th>
+      <th scope="col"className="ItemCart1">Precio</th>
+      <th scope="col" className="ItemCart3">Cantidad</th>
+      <th scope="col" className="ItemCart4"></th>
+    
+  </thead>
+  </table>
         {itemsCart.map((itemsCart, idx) => (
           <ItemCart key={idx} itemsCart={itemsCart} />
         )) }
         <thead className='total'>
           <tr>
-            <th scope="col" >Total: ${total}</th>
+            <th scope="col" className='total' >Total: ${total}</th>
           </tr>
         </thead>
         <p> Total: ${total} </p>

@@ -18,15 +18,15 @@ import ItemCount from '../ItemCount/itemCount';
 
 
 const ItemDetailContainer = ({ data }) => {
-const { itemsCart, AddToCart } = useContext(ItemsCartContext);
+const { counts, itemsCart, AddToCart, ItemRemove } = useContext(ItemsCartContext);
 
 
 const agregarAlCarrito = () => {
-  const detalle = { ...data };
+  const detalle = { ...data, amount: counts };
   AddToCart(detalle);
 };
 
-
+ 
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardContent>

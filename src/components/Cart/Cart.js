@@ -33,8 +33,8 @@ const ItemsCart = () => {
     
   </thead>
   </table>
-        {itemsCart.map((itemsCart, idx) => (
-          <ItemCart key={idx} itemsCart={itemsCart} />
+        {itemsCart.map((itemsCart) => (
+          <ItemCart key={itemsCart.id} itemsCart={itemsCart} />
         )) }
         <thead className='total'>
           <tr>

@@ -10,20 +10,13 @@ const ItemCart = ({itemsCart}) => {
   const { i, seti, AddToCart, IdProd, ItemRemove }= useContext(ItemsCartContext);
 
   const eliminarDelCarrito = () => {
-    {ItemRemove()}
+    {ItemRemove()};
+    console.log(itemsCart.amount);
   };   
 
   return (
     <div className='ItemCart'>
     <table className="table">
-  {/* <thead>
-    <tr>
-      <th scope="col"></th>
-      <th scope="col">Articulo</th>
-      <th scope="col">Precio</th>
-      <th scope="col">Cantidad</th>
-    </tr>
-  </thead> */}
   <tbody>
     <tr>
       <th scope="row" className="ItemCart1"><img src={itemsCart.img} width="100px"/></th>
@@ -34,8 +27,12 @@ const ItemCart = ({itemsCart}) => {
     </tr>
   </tbody>
 </table>
+
 </div>
+
   )
+  
 }
+
 
 export default ItemCart

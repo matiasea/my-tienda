@@ -1,4 +1,4 @@
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 
 //-------Context---------------
 import { ItemsCartContext } from '../Context/ItemCartContext';
@@ -18,21 +18,21 @@ import ItemCount from '../ItemCount/itemCount';
 
 
 const ItemDetailContainer = ({ data }) => {
-const { counts, itemsCart, AddToCart, ItemRemove } = useContext(ItemsCartContext);
+  const { counter, itemsCart, AddToCart, ItemRemove } = useContext(ItemsCartContext);
 
 
-const agregarAlCarrito = () => {
-  const detalle = { ...data, amount: counts };
-  AddToCart(detalle);
-};
+  const agregarAlCarrito = () => {
+    const detalle = { ...data, amount: counter };
+    AddToCart(detalle);
+  };
 
- 
+
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardContent>
-      <Typography gutterBottom variant="h5" component="div">
-              {data.articulo}
-            </Typography>
+        <Typography gutterBottom variant="h5" component="div">
+          {data.articulo}
+        </Typography>
       </CardContent>
       <CardMedia
         component="img"
@@ -41,9 +41,9 @@ const agregarAlCarrito = () => {
         alt="electro"
       />
       <CardContent>
-      <Typography gutterBottom variant="h5" component="div">
-              ${data.precio}
-            </Typography>
+        <Typography gutterBottom variant="h5" component="div">
+          ${data.precio}
+        </Typography>
         <Typography gutterBottom variant="h5" component="div">
           {data.article}
         </Typography>
@@ -51,15 +51,15 @@ const agregarAlCarrito = () => {
           {data.detalle3}
         </Typography>
       </CardContent>
-      <ItemCount/>
+      <ItemCount />
       <CardActions>
         <Button type="button" class="btn btn-dark" size="small" onClick={agregarAlCarrito}>AGREGAR AL CARRITO</Button>
         {itemsCart.length > 0 ? (<TerminarCompraButton />) : null}
-        
+
       </CardActions>
 
 
-    
+
     </Card>
   );
 };

@@ -17,49 +17,52 @@ export const ItemsCartProvider = ({ children }) => {
   const IdProd = (id) => {
     const idEncontrado = itemsCart.find((product) => product.id === id);
     return idEncontrado === undefined ? false : true;
-    };
+  };
 
 
-    const AddToCart = (obj) => {
-        if (!IdProd(obj.id)) {
-          setItemsCart([...itemsCart, obj]);
-        } else {
-          itemsCart.forEach((product, index) => {
-            if (product.id === obj.id) {
-              itemsCart[index].amount = product.amount + obj.amount;
-              setItemsCart([...itemsCart]);
-            }
-          });
+  const AddToCart = (obj) => {
+    if (!IdProd(obj.id)) {
+      setItemsCart([...itemsCart, obj]);
+    } else {
+      itemsCart.forEach((product, index) => {
+        if ([product.id === obj.id]) {
+          itemsCart[index].amount = product.amount + obj.amount;
+          setItemsCart([...itemsCart]);
         }
-      };
+      });
+    }
+  };
 
-      const ItemRemove = (id) => {
-        const eliminarItem = itemsCart.filter((product) => product.id !== id);
-        setItemsCart(eliminarItem);
-        };
-      
-      const onAdd = () => {   
-          setCounter(counter + 1)}
-      
-      const onRemove = () => {
-            if (counter >= 1) {   
-            setCounter(counter - 1)}}
+  const ItemRemove = (id) => {
+    const eliminarItem = itemsCart.filter((product) => product.id !== id);
+    setItemsCart(eliminarItem);
+  };
 
-      
-      const totalProd = () => {
-              let total = 0;
-              itemsCart.forEach(({ amount, precio }) => {
-                total = total + amount * precio;
-              });
-              return total;
-            };
+  const onAdd = () => {
+    setCounter(counter + 1)
+  }
+
+  const onRemove = () => {
+    if (counter >= 1) {
+      setCounter(counter - 1)
+    }
+  }
 
 
-      
-    return (<ItemsCartContext.Provider value={{ itemsCart, IdProd, setItemsCart, AddToCart, ItemRemove, counter, onAdd, onRemove, totalProd }}>
-        {children}
-        </ItemsCartContext.Provider>
-        );
+  const totalProd = () => {
+    let total = 0;
+    itemsCart.forEach(({ amount, precio }) => {
+      total = total + amount * precio;
+    });
+    return total;
+  };
+
+
+
+  return (<ItemsCartContext.Provider value={{ itemsCart, IdProd, setItemsCart, AddToCart, ItemRemove, counter, onAdd, onRemove, totalProd }}>
+    {children}
+  </ItemsCartContext.Provider>
+  );
 }
 
 

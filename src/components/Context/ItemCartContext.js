@@ -34,8 +34,7 @@ export const ItemsCartProvider = ({ children }) => {
   };
 
   const ItemRemove = (id) => {
-    const eliminarItem = itemsCart.filter((product) => product.id !== id);
-    setItemsCart(eliminarItem);
+    setItemsCart(itemsCart.filter((product) => product.id !== id));
   };
 
   const onAdd = () => {

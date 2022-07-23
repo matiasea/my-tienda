@@ -14,7 +14,10 @@ const CartIcon = () => {
             <Link to="/cart"  className="float-start">
             <LocalGroceryStoreTwoToneIcon />
             <div className="float-md-end numberCart">
-            {itemsCart.length > 0 ? (<p>{itemsCart.length}</p>) : null}
+            {itemsCart.length > 0 ? (<p>{itemsCart.reduce(
+                    (acc, prod) => acc + prod.amount,
+                    0
+                  )}</p>) : null}
             </div>
             </Link>
             

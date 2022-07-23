@@ -9,9 +9,10 @@ const ItemCart = ({itemsCart}) => {
 
   const { i, seti, AddToCart, IdProd, ItemRemove }= useContext(ItemsCartContext);
 
-  const eliminarDelCarrito = () => {
-    {ItemRemove()};
-    console.log(itemsCart.amount);
+  const eliminarDelCarrito = (id) => {    
+    ItemRemove(id);
+   //e.target.parentNode.parentNode.parentNode.remove()
+    
   };   
 
   return (
@@ -19,7 +20,7 @@ const ItemCart = ({itemsCart}) => {
     <table className="table">
   <tbody>
     <tr>
-      <th scope="row" className="ItemCart1"><img src={itemsCart.img} width="100px"/></th>
+      <th scope="row" className="ItemCart1"><img src={itemsCart.img} alt={itemsCart.id} width="100px"/></th>
       <td className="ItemCart2">{itemsCart.articulo}</td>
       <td className="ItemCart1">${itemsCart.precio}</td>
       <td className="ItemCart3">{itemsCart.amount} </td>

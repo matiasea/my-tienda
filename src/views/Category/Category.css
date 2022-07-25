@@ -2,7 +2,8 @@
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 40px 0 40px 0;
+    margin: 80px 0 40px 0;
     gap: 40px;
     border: 1 solid rgb(80, 78, 78);
+
 }

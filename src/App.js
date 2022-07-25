@@ -11,7 +11,7 @@ import { ItemsCartProvider } from "./components/Context/ItemCartContext";
 
 //--------COMPONENTS ----------------
 import Header from "./components/Header/Header";
-import NavCategories from "./components/Categories/navCategories";
+
 
 //-------- VIEWS ---------------------
 import Home from "./views/Home/Home";
@@ -29,9 +29,7 @@ import CategoryView from "./views/Category/CategoryView";
     <BrowserRouter>
     <ItemsCartProvider>
       <Header />
-      <NavCategories />
-
-      <div className="App">
+        <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Product" element={<Product />} />

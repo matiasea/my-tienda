@@ -6,11 +6,13 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import ItemCount from "../ItemCount/itemCount";
 
+import "./categories.css"
+
 
 
 const ItemCategories = ({props}) => {
   return (
-    <Card  sx={{ maxWidth: 345 }}>
+    <Card  sx={{ maxWidth: 345 }} className="itemCategorias">
       <CardActionArea >
         <CardMedia
             

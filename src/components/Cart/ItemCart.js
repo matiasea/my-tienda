@@ -24,7 +24,8 @@ const ItemCart = ({itemsCart}) => {
       <td className="ItemCart2">{itemsCart.articulo}</td>
       <td className="ItemCart1">${itemsCart.precio}</td>
       <td className="ItemCart3">{itemsCart.amount} </td>
-      <td className="ItemCart4"><button onClick={eliminarDelCarrito} type="button" class="btn btn-light"> <img src={imgEliminar} className="btn-eliminar" /> </button></td>
+      <td className="ItemCart2">${itemsCart.amount * itemsCart.precio} </td>
+      <td className="ItemCart3"><button onClick={eliminarDelCarrito} type="button" class="btn btn-light"> <img src={imgEliminar} className="btn-eliminar" /> </button></td>
     </tr>
   </tbody>
 </table>

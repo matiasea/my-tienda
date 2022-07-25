@@ -11,7 +11,7 @@ const initialState = [];
 
 export const ItemsCartProvider = ({ children }) => {
   const [itemsCart, setItemsCart] = useState(initialState);
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
 
 
   const IdProd = (id) => {
@@ -42,7 +42,7 @@ export const ItemsCartProvider = ({ children }) => {
   }
 
   const onRemove = () => {
-    if (counter >= 1) {
+    if (counter >= 2) {
       setCounter(counter - 1)
     }
   }

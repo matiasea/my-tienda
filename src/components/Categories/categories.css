@@ -1,3 +1,19 @@
 .itemCategorias {
     padding: 150px;
+    background-color: none;
+    font-size: xx-large;
 }
+
+.nav2{
+    position: relative ;
+    margin: 10px;
+    float:right;
+    text-decoration: none;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: medium;
+    color: black;
+    font-family:'Lucida Sans';
+    font-weight: 400;
+    position:relative;      
+   }

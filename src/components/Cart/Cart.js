@@ -22,14 +22,15 @@ const ItemsCart = () => {
       </div>)
   }
   return (
-    <div>
+    <div className='margin'>
       <table className="table">
-        <thead>
+        <thead >
           <th scope="col" className="ItemCart1"></th>
           <th scope="col" className="ItemCart2">Articulo</th>
-          <th scope="col" className="ItemCart1">Precio</th>
+          <th scope="col" className="ItemCart1">Precio Unitario</th>
           <th scope="col" className="ItemCart3">Cantidad</th>
-          <th scope="col" className="ItemCart4"></th>
+          <th scope="col" className="ItemCart2">Precio Total</th>
+          <th scope="col" className="ItemCart3"></th>
 
         </thead>
       </table>
@@ -41,7 +42,7 @@ const ItemsCart = () => {
           <th scope="col" className='total' >Total: ${totalProd(itemsCart)}</th>
         </tr>
       </thead>
-      <p> Total: ${total} </p>
+      
     </div>
   )
 }

@@ -10,6 +10,7 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
+import "./categories.css"
 
 const NavCategories = () => {
   const [open, setOpen] = React.useState(false);
@@ -47,15 +48,16 @@ const NavCategories = () => {
   }, [open]);
 
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction="row" spacing={2}  >
       <div>
-        <Button
+        <Button 
           ref={anchorRef}
           id="composition-button"
           aria-controls={open ? 'composition-menu' : undefined}
           aria-expanded={open ? 'true' : undefined}
           aria-haspopup="true"
           onClick={handleToggle}
+          
         >
           Categorias
         </Button>
@@ -66,6 +68,7 @@ const NavCategories = () => {
           placement="bottom-start"
           transition
           disablePortal
+          
         >
           {({ TransitionProps, placement }) => (
             <Grow
@@ -83,11 +86,11 @@ const NavCategories = () => {
                     aria-labelledby="composition-button"
                     onKeyDown={handleListKeyDown}
                   >
-                    <Link to="/linea/electrohogar">Electrohogar</Link>
-                <Link to="/linea/tvaudiovideo" >Tv, Audio y Video</Link>
-                <Link to="/linea/pequenios" >Pequeños Electrodomesticos</Link>
-                <Link to="/linea/rodados" >Rodados</Link>
-                <Link to="/linea/tecnologia" >Tecnologia</Link>
+                    <Link to="/linea/electrohogar" className="nav2">Electrohogar</Link>
+                <Link to="/linea/tvaudiovideo" className="nav2">Tv, Audio y Video</Link>
+                <Link to="/linea/pequenios" className="nav2" >Pequeños Electrodomesticos</Link>
+                <Link to="/linea/rodados" className="nav2" >Rodados</Link>
+                <Link to="/linea/tecnologia" className="nav2" >Tecnologia</Link>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>

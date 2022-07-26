@@ -33,9 +33,19 @@ export const ItemsCartProvider = ({ children }) => {
     }
   };
 
-  const ItemRemove = (id) => {
-    setItemsCart(itemsCart.filter((product) => product.id !== id));
-  };
+ /*  const eliminarDelCarrito = (item) => {
+   // const exist = itemsCart.find((x) => x.id === item.id);       
+     if (IdProd) {
+      setItemsCart(itemsCart.filter((x) => x.id !== item.id)); 
+    }
+  }; */ 
+
+
+ const ItemRemove = (id) => setItemsCart(itemsCart.filter(product => product.id !== id));
+  
+
+ 
+
 
   const onAdd = () => {
     setCounter(counter + 1)

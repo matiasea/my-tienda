@@ -7,13 +7,21 @@ import imgEliminar from "../Cart/eliminar.png"
 
 const ItemCart = ({itemsCart}) => {
 
-  const { i, seti, AddToCart, IdProd, ItemRemove }= useContext(ItemsCartContext);
+  const { i, seti, AddToCart, IdProd, ItemRemove, }= useContext(ItemsCartContext);
+  /* const eliminarDelCarrito = (item) => {
+    const exist = itemsCart.find((x) => x.id === item.id);       
+     if (exist) {
+      setItemsCart(itemsCart.filter((x) => x.id !== item.id)); 
+    }
+  };  */
 
-  const eliminarDelCarrito = (id) => {    
-    ItemRemove(id);
+
+   const eliminarDelCarrito = () => {
+      
+    ItemRemove();
    //e.target.parentNode.parentNode.parentNode.remove()
-    
-  };   
+    };
+ 
 
   return (
     <div className='ItemCart'>

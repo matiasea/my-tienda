@@ -49,8 +49,9 @@ const NavCategories = () => {
 
   return (
     <Stack direction="row" spacing={2}  >
-      <div>
+      <div >
         <Button 
+          className="nav2"
           ref={anchorRef}
           id="composition-button"
           aria-controls={open ? 'composition-menu' : undefined}
@@ -59,7 +60,7 @@ const NavCategories = () => {
           onClick={handleToggle}
           
         >
-          Categorias
+          CATEGORIAS
         </Button>
         <Popper
           open={open}

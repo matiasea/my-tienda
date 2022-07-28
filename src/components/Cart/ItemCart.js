@@ -16,28 +16,38 @@ const ItemCart = ({itemsCart}) => {
   };  */
 
 
-   const eliminarDelCarrito = () => {
+ /*   const eliminarDelCarrito = () => {
       
     ItemRemove();
    //e.target.parentNode.parentNode.parentNode.remove()
-    };
+    }; */
  
 
   return (
     <div className='ItemCart'>
-    <table className="table">
-  <tbody>
-    <tr>
-      <th scope="row" className="ItemCart1"><img src={itemsCart.img} alt={itemsCart.id} width="100px"/></th>
-      <td className="ItemCart2">{itemsCart.articulo}</td>
-      <td className="ItemCart1">${itemsCart.precio}</td>
-      <td className="ItemCart3">{itemsCart.amount} </td>
-      <td className="ItemCart2">${itemsCart.amount * itemsCart.precio} </td>
-      <td className="ItemCart3"><button onClick={eliminarDelCarrito} type="button" class="btn btn-light"> <img src={imgEliminar} className="btn-eliminar" /> </button></td>
-    </tr>
-  </tbody>
-</table>
-
+      <table className="table">
+        <tbody>
+         <tr>
+          <th scope="row" className="ItemCart1">
+            <img src={itemsCart.img} alt={itemsCart.id} width="100px"/></th>
+          <td className="ItemCart2">{itemsCart.articulo}</td>
+          <td className="ItemCart1">${itemsCart.precio}</td>
+          <td className="ItemCart3">{itemsCart.amount} </td>
+          <td className="ItemCart2">
+            ${itemsCart.amount * itemsCart.precio}{" "}
+          </td>
+            <td className="ItemCart3"><button
+            onClick={() => ItemRemove(itemsCart.id)} 
+            type="button" 
+            class="btn btn-light"
+            > {" "}
+              <img src={imgEliminar} className="btn-eliminar" />{" "}
+              
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
 </div>
 
   )

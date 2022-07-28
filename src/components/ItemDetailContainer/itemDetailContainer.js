@@ -12,8 +12,11 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 //COMPONENTS -----------------------------
-import TerminarCompraButton from '../Cart/TerminarCompraButton';
+import VerCarrito from '../Cart/VerCarrito';
 import ItemCount from '../ItemCount/itemCount';
+
+//-------Estilos--------------
+import "./itemDetail.css"
 
 
 
@@ -28,20 +31,38 @@ const ItemDetailContainer = ({ data }) => {
 
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          {data.articulo}
-        </Typography>
-      </CardContent>
+    <Card sx={{ maxWidth: 1000 }} className='detail2'>
+      <div>
       <CardMedia
         component="img"
-        width="100"
+        width="300"
         image={data.img}
         alt="electro"
       />
+      </div>
+      <div>
+      <CardContent >
+        <Typography gutterBottom 
+        variant="h5" 
+        component="div"
+        text-decoration={"none"}
+        fontWeight="bold"
+        fontFamily={"Lucida Sans Regular"}
+        >
+          {data.articulo}
+        </Typography>
+      </CardContent>
+      
+      
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography gutterBottom 
+        variant="h4" 
+        color={"grey"}
+        component="div"
+        text-decoration={"none"}
+        fontWeight="bold"
+        fontFamily={"Lucida Sans Regular"}
+        >
           ${data.precio}
         </Typography>
         <Typography gutterBottom variant="h5" component="div">
@@ -51,15 +72,20 @@ const ItemDetailContainer = ({ data }) => {
           {data.detalle3}
         </Typography>
       </CardContent>
+      </div>
+      <div className='detail'>
       <ItemCount />
-      <CardActions>
-        <Button type="button" class="btn btn-dark" size="small" onClick={agregarAlCarrito}>AGREGAR AL CARRITO</Button>
-        {itemsCart.length > 0 ? (<TerminarCompraButton />) : null}
+      <CardActions className='detail3' >
+       <Button 
+       
+       variant="contained" 
+       onClick={agregarAlCarrito} 
+       sx={{ maxWidth: 150 }} 
+       >AGREGAR AL CARRITO</Button>
+        {itemsCart.length > 0 ? (<VerCarrito />) : null}
 
       </CardActions>
-
-
-
+      </div>
     </Card>
   );
 };

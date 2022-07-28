@@ -11,10 +11,10 @@ const CartIcon = () => {
     const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
     return (    
         <div>
-            <Link to="/cart"  className="float-start">
-            <LocalGroceryStoreTwoToneIcon />
-            <div className="float-md-end numberCart">
-            {itemsCart.length > 0 ? (<p>{itemsCart.reduce(
+            <Link to="/cart"  className="ItemCart">
+            <LocalGroceryStoreTwoToneIcon  />
+            <div className="float-md-end">
+            {itemsCart.length > 0 ? (<p className='numberCart'>{itemsCart.reduce(
                     (acc, prod) => acc + prod.amount,
                     0
                   )}</p>) : null}

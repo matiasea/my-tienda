@@ -17,7 +17,7 @@ import Header from "./components/Header/Header";
 import Home from "./views/Home/Home";
 import Contact from "./views/Contact/Contact";
 import Product from "./views/Product/Product";
-import Postventa from "./views/Postventa/Postventa";
+import DatosDeEnvio from "./views/Postventa/datosDeEnvio";
 import Detail from "./views/Detail/Detail";
 import Cart from "./views/Carrito/Carrito";
 import CategoryView from "./views/Category/CategoryView";
@@ -33,7 +33,7 @@ import CategoryView from "./views/Category/CategoryView";
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Product" element={<Product />} />
-          <Route path="/Postventa" element={<Postventa />} />
+          <Route path="/DatosDeEnvio" element={<DatosDeEnvio />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/cart" element={<Cart /> } />

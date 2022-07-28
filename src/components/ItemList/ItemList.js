@@ -4,6 +4,7 @@ import "./ItemList.css";
 
 const ItemList = ({ productos }) => {
   return (
+    <div className="itemsList2">
     <div className="itemList">
       {productos.map((producto) => {
         return (
@@ -12,6 +13,7 @@ const ItemList = ({ productos }) => {
         );
       })}
     </div>
+  </div>
   );
 };
 

@@ -1,5 +1,5 @@
 .header{
-    height: 150px;
+    height: 100%;
     background-color: rgb(37, 34, 34);
     text-align: center;
     align-items: center;
@@ -7,6 +7,7 @@
 }
 
 .logo{
-   padding-top: 50px;
-    width: 250px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   width: 250px;
 }

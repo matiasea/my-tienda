@@ -7,11 +7,14 @@ import { db } from "../../firebase/fireBaseConfig";
 import { collection, query, getDocs, documentId, where } from "firebase/firestore";
 
 
+//--------COMPONENTS----------------
+import Spinner from "../../components/Spinner/Spinner";
+
 const Detail = () => {
 const [ detailProduct, setDetailProduct ] = useState ([]);
+const [ waiting, setWaiting] = useState (true)
 
 const  {id}  = useParams();
-console.log (id)
 
 useEffect (() => {
 const getDetail = async () => {
@@ -22,18 +25,28 @@ const getDetail = async () => {
   querySnapshot.forEach((doc) => {
     stockDetalle.push({ ...doc.data(), id: doc.id})
   });
-  console.log(stockDetalle)
   setDetailProduct(stockDetalle)
 };
   getDetail();
+  
+  setTimeout( () => {
+    setWaiting(false);
+  }, 400);
   
 }, [id]);
 
 return (
     <div>
-      {detailProduct.map ((data) => {
-        return <ItemDetailContainer data={data} />
-      })}
+      {waiting ? (
+        <div>
+          <Spinner/>
+        </div>
+      ) : (
+      detailProduct.map ((data) => {
+        return <ItemDetailContainer data={data} key={data.id} />
+      })
+      )
+      }
     </div>
 )
 

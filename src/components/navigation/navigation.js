@@ -13,13 +13,13 @@ const Navigation = () => {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
 
             <ul className="navbar-nav">
-                <Link to="/" className="nav-item nav-link active nav3" aria-current="page">Inicio</Link>
-                <Link to="/Product" className="nav-item nav-link active nav3 " aria-current="page">Nustros Productos</Link>
-                <Link to="/Postventa" className="nav-item nav-link active nav3" aria-current="page">Postventa</Link>
-                <Link to="/Contact" className="nav-item nav-link active nav3" aria-current="page">Contacto</Link>
+                <Link to="/" className="nav3" aria-current="page">HOME</Link>
+                <Link to="/Product" className="nav3 " aria-current="page">TODOS LOS PRODUCTOS</Link>
+                <NavCategories className="nav3"/>
+                <Link to="/Contact" className="nav3" aria-current="page">CONTACTO</Link>
                 
             </ul>
-            <NavCategories className="nav3"/>
+            
             </div>
             </div>
             <CartIcon/>

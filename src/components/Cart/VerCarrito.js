@@ -7,7 +7,7 @@ const VerCarrito = () => {
   return (
       <div>
             <Link to="/cart">
-            <Button variant="contained" sx={{ maxWidth: 80 }}>VER CARRITO</Button>
+            <button className="btnEnviar">Ver Carrito</button>
             </Link>
         </div>
    

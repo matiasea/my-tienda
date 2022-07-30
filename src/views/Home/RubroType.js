@@ -11,14 +11,14 @@ import "../Category/Category.css"
 
 
 
-const CategoryView = () => {
+const RubroType = () => {
 const [ detailProduct, setDetailProduct ] = useState ([]);
 
-const  {linea}  = useParams();
+const  {rubro}  = useParams();
 
 useEffect (() => {
 const getDetail = async () => {
-  const q = query(collection(db, "productos"), where ("linea", "==", linea));
+  const q = query(collection(db, "productos"), where ("rubro", "==", rubro));
   const stockDetalle = [];
 
   const querySnapshot = await getDocs(q);
@@ -29,7 +29,7 @@ const getDetail = async () => {
 };
   getDetail();
   
-}, [linea]);
+}, [rubro]);
 
 return (
     <div className="category">
@@ -41,4 +41,4 @@ return (
 
 }
 
-export default CategoryView;
+export default RubroType;

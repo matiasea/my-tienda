@@ -1,0 +1,32 @@
+.form{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+.btnEnviar {
+	background-image: radial-gradient(rgb(165, 164, 164), rgb(104, 104, 103), rgb(53, 53, 54));
+	color: white;
+	height: 50px;
+	width: 250px;
+	border-radius: 8px;
+	font-size: 18px;
+	border: none;
+	margin: 10px;
+}
+
+.btnEnviar:hover {
+	background: rgb(34, 34, 34);
+}
+
+.textEnvio{
+	margin-top: 30px;
+	width: 900px;
+    text-align: center;
+    background-color: rgb(131, 127, 127);
+    color: rgb(8, 2, 36);
+    font-size: 25px;  
+	font-weight: bold;
+}

@@ -12,18 +12,17 @@ const ItemsCart = () => {
   const total = itemsCart.reduce((acc, item) =>
     acc + item.precio, 0)
 
-  console.log(total)
-
+  
   if (itemsCart == 0) {
     return (
       <div>
-        <h2> Tu Carrito esta vacío</h2>
+        <h2 className='CarroVacio'> Tu Carrito esta vacío</h2>
         <Link to="/Product"><Button type="button" class="btn btn-dark"> Ir a Comprar </Button></Link>
       </div>)
   }
   return (
     <div className='margin'>
-      <table className="table">
+      <table className="table ItemListC">
         <thead >
           <th scope="col" className="ItemCart1"></th>
           <th scope="col" className="ItemCart2">Articulo</th>
@@ -37,9 +36,9 @@ const ItemsCart = () => {
       {itemsCart.map((itemsCart) => (
         <ItemCart key={itemsCart.id} itemsCart={itemsCart} />
       ))}
-      <thead className='total'>
-        <tr>
-          <th scope="col" className='total' >Total: ${totalProd(itemsCart)}</th>
+      <thead >
+        <tr >
+          <th className='total'>Total: ${totalProd(itemsCart)}</th>
         </tr>
       </thead>
       

@@ -8,15 +8,15 @@ import NavCategories from '../Categories/navCategories';
 const Navigation = () => {
     const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light ">
             <div className="container-fluid">
-            <div className="collapse navbar-collapse" id="navbarNavDropdown">
+            <div className="navbar-collapse">
 
-            <ul className="navbar-nav">
+            <ul className="nav3">
                 <Link to="/" className="nav3" aria-current="page">HOME</Link>
                 <Link to="/Product" className="nav3 " aria-current="page">TODOS LOS PRODUCTOS</Link>
                 <NavCategories className="nav3"/>
-                <Link to="/Contact" className="nav3" aria-current="page">CONTACTO</Link>
+                <Link to="/Contact" className="nav3" >CONTACTO</Link>
                 
             </ul>
             

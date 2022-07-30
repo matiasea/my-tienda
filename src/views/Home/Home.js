@@ -1,10 +1,22 @@
 import React from "react";
+import lavado from "../Home/lavado.png"
+import "./Home.css"
+
+
+//--------------COMPONENTES-------------------
+import Lineas from "./Lineas";
+import { Link } from "react-router-dom";
+
+
 
 
 const Home = () => {
   return (
     <div>
-      <h1>E-COMMERCE 1 </h1>
+      <Link to="/rubro/lavarropas">
+      <img src={lavado} className="lavado" />
+      </Link>
+      <Lineas/>
     </div>
   );
 };

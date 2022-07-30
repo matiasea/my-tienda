@@ -1,20 +1,17 @@
 .nav1{
     opacity: 95%;
     color: black;
-  
     font-weight: bold;
     font-size: larger;
     font-family:'Lucida Sans';
 }
+
 ul {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-    color: rgb(224, 26, 26);
-    
-
-}
+    }
 
 .nav1 li{
     padding: 15px;
@@ -29,8 +26,8 @@ ul {
     padding-left: 5px;
     padding-right: 5px;
     font-size: medium;
-    color: rgb(14, 13, 13);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
+    color: rgb(223, 215, 215);
+    font-family:'Lucida Sans';
+    font-weight: bold;
     position:relative;       
 }

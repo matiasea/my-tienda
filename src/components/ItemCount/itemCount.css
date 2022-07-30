@@ -6,11 +6,45 @@
     list-style-type: none;
     color: rgb(41, 43, 42);
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     font-family: sans-serif;
     
 }
 
 p{
     padding: 10px;
+}
+
+.btnAdd {
+    color: rgb(2, 88, 6);
+    background-color: white;
+    height: 50px;
+	width: 30px;
+	border-radius: 8px;
+	font-size: 25px;
+	border: none;
+	margin: 10px;
+    font-weight: bolder;
+}
+
+.btnAdd:hover {
+	background: rgb(2, 143, 49);
+    color: aliceblue;
+}
+
+.btnRemove {
+    color: rgb(121, 7, 7);
+    background-color: white;
+    height: 50px;
+	width: 30px;
+	border-radius: 8px;
+	font-size: 25px;
+	border: none;
+	margin: 10px;
+    font-weight: bolder;
+}
+
+.btnRemove:hover {
+	background: rgb(223, 3, 3);
+    color: aliceblue;
 }

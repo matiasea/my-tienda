@@ -11,6 +11,7 @@ import { ItemsCartProvider } from "./components/Context/ItemCartContext";
 
 //--------COMPONENTS ----------------
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 
 //-------- VIEWS ---------------------
@@ -21,7 +22,7 @@ import DatosDeEnvio from "./views/Postventa/datosDeEnvio";
 import Detail from "./views/Detail/Detail";
 import Cart from "./views/Carrito/Carrito";
 import CategoryView from "./views/Category/CategoryView";
-
+import RubroType from "./views/Home/RubroType";
 
  function App() {
   return (
@@ -38,12 +39,12 @@ import CategoryView from "./views/Category/CategoryView";
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/cart" element={<Cart /> } />
           <Route path="/linea/:linea" element={<CategoryView /> } />
-          
-
+          <Route path="/rubro/:rubro" element={<RubroType /> } />
         </Routes>
       </div>
        
       </ItemsCartProvider>
+      <Footer/>
     </BrowserRouter>
     
   );

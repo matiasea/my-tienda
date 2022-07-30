@@ -13,15 +13,31 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     gap: 40px;
+    
 }
 
 .detail3{
     display: grid;
     grid-template-columns: 1fr 1fr ;
     gap: 10px;
+}
+
+.btnEnviar {
+	background-image: radial-gradient(rgb(165, 164, 164), rgb(104, 104, 103), rgb(53, 53, 54));
+	color: white;
+	height: 55px;
+	width: 150px;
+	border-radius: 8px;
+	font-size: 18px;
+	border: none;
+	margin: 10px;
+}
+
+.btnEnviar:hover {
+	background: rgb(34, 34, 34);
 }
 
 

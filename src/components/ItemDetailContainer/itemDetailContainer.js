@@ -35,7 +35,7 @@ const ItemDetailContainer = ({ data }) => {
       <div>
       <CardMedia
         component="img"
-        width="300"
+        width="400"
         image={data.img}
         alt="electro"
       />
@@ -76,14 +76,13 @@ const ItemDetailContainer = ({ data }) => {
       <div className='detail'>
       <ItemCount />
       <CardActions className='detail3' >
-       <Button 
-       
-       variant="contained" 
-       onClick={agregarAlCarrito} 
-       sx={{ maxWidth: 150 }} 
-       >AGREGAR AL CARRITO</Button>
-        {itemsCart.length > 0 ? (<VerCarrito />) : null}
-
+      <button 
+      className="btnEnviar"
+      onClick={agregarAlCarrito} 
+      >
+        Agregar al Carrito
+        </button>
+        <VerCarrito />
       </CardActions>
       </div>
     </Card>

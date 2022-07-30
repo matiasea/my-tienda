@@ -1,12 +1,10 @@
-.header{
+.footer{
     height: 100%;
     background-color: rgb(37, 34, 34);
     text-align: center;
     align-items: center;
+    color: aliceblue;
+    font-size: 10px;
     
-}
-
-.logo{
-   padding-top: 20px;
-   width: 250px;
+    
 }

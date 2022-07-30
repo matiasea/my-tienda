@@ -1,0 +1,15 @@
+.btnVaciar {
+	background-image: radial-gradient(rgb(148, 3, 3), rgb(102, 2, 2), rgb(94, 1, 1));
+	color: white;
+	height: 40px;
+	width: 150px;
+	border-radius: 6px;
+	font-size: 18px;
+	border: none;
+	margin: 10px;
+}
+
+.btnVaciar:hover {
+	background: rgb(85, 1, 1);
+    color: rgb(211, 207, 207);
+}

@@ -1,12 +1,44 @@
 .margin{
-    margin: 120px 0 40px 0;   
+    margin-top: 50px;
 }
 
 .ItemCart{
     display: flex;
     position: relative;
     margin-right: 15px;
+    
 }
+.ItemList{
+    width: 900px;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+    padding-right: 100px;
+    font-size: small;
+    
+}
+
+.ItemListC{
+    width: 900px;
+    background-color: rgb(131, 127, 127);
+    text-align: center;
+    align-items: center;
+    font-size: large;
+    
+}
+
+.CarroVacio{
+    padding: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 900px;
+    background-image: linear-gradient(rgb(216, 212, 212), rgb(196, 196, 189));
+    text-align: center;
+    align-items: center;   
+}
+
+
+
 .ItemCart1{
     width: 15%;
 }
@@ -42,12 +74,32 @@
 }
 
 .total {
+    width: 900px;
     text-align: center;
-    align-items: flex-end;
-    align-content: flex-end;
-    color: rgb(51, 51, 50);
-    font-size: large;   
-    margin-left: auto;
-    margin-right: auto;
-   
+    background-color: rgb(131, 127, 127);
+    color: rgb(8, 2, 36);
+    font-size: 30px;  
+  
+}
+
+.botonesCart{
+    margin-top: 20px;
+    display: inline-flex;
+    grid-template-columns: 1fr 1fr ;
+    gap: 50px;
+}
+
+.btnTerminar {
+	background-image: radial-gradient(rgb(141, 140, 140), rgb(95, 95, 94), rgb(53, 53, 54));
+	color: white;
+	height: 40px;
+	width: 150px;
+	border-radius: 5px;
+	font-size: 18px;
+	border: none;
+	margin: 10px;
+}
+
+.btnTerminar:hover {
+	background: rgb(53, 53, 54);
 }

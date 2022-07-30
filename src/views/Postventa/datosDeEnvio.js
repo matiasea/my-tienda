@@ -1,9 +1,13 @@
 import React, { useState} from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/fireBaseConfig";
+import { Formik, Field, Form } from "formik";
 
 import TextField from '@mui/material/TextField';
 import { async } from "@firebase/util";
+
+//------------ESTILOS--------------
+import "./datosDeEnvios.css"
 
 //------------COMPONENTS------------
 import MessageOk from "../../components/MessageOk/MessageOk";
@@ -13,8 +17,10 @@ import MessageOk from "../../components/MessageOk/MessageOk";
 
 const initialState = {
     name: " ",
-    lastName: " ",
+    direccion: " ",
     city: " ",
+	telefono:" ",
+	comentario: " ",
 };
 
 
@@ -44,30 +50,50 @@ const DatosDeEnvio = () => {
 
 
     return (
-    <div>
-        <form className='FormContainer' onSubmit={onSubmit}>
-				<TextField
-					placeholder='Name'
-					style={{ margin: 10, width: 400 }}
-					name='name'
-					value={values.name}
-					onChange={handleOnChange}
-				/>
-				<TextField
-					placeholder='Last Name'
-					style={{ margin: 10, width: 400 }}
-					name='lastName'
-					value={values.lastName}
-					onChange={handleOnChange}
-				/>
-				<TextField
-					placeholder='City'
-					style={{ margin: 10, width: 400 }}
-					name='city'
-					value={values.city}
-					onChange={handleOnChange}
-				/>
-				<button className='btnASendAction'>Send</button>
+    <div >
+		<p className="textEnvio">Datos de Envio</p>
+        <form className="form" onSubmit={onSubmit}>
+			<input 
+				placeholder="Nombre y Apellido"
+				style={{ margin: 10, width: 350 }}
+				name='name'
+				value={values.name}
+				onChange={handleOnChange}
+				>
+			</input>
+			<input
+				placeholder='Direccion'
+				style={{ margin: 10, width: 350 }}
+				name='direccion'
+				value={values.direccion}
+				onChange={handleOnChange}
+				>
+			</input>	
+			<input
+				placeholder='Ciudad/Localidad'
+				style={{ margin: 10, width: 350 }}
+				name='city'
+				value={values.city}
+				onChange={handleOnChange}
+				>
+			</input>
+			<input
+				placeholder='Telefono'
+				style={{ margin: 10, width: 350 }}
+				name='telefono'
+				value={values.telefono}
+				onChange={handleOnChange}
+				>
+			</input>
+			<input
+				placeholder='Comentarios'
+				style={{ margin: 10, width: 350 }}
+				name='comentario'
+				value={values.comentario}
+				onChange={handleOnChange}
+				>
+			</input>
+			<button className="btnEnviar">Send</button>
 			</form>
 			{comprasId && <MessageOk comprasID={comprasId} /> }
         </div>)

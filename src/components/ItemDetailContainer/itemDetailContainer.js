@@ -8,7 +8,6 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 //COMPONENTS -----------------------------
@@ -17,27 +16,39 @@ import ItemCount from '../ItemCount/itemCount';
 
 //-------Estilos--------------
 import "./itemDetail.css"
+import { toast } from "react-toastify";
 
 
 
 const ItemDetailContainer = ({ data }) => {
-  const { counter, itemsCart, AddToCart, ItemRemove } = useContext(ItemsCartContext);
+  const { counter, AddToCart } = useContext(ItemsCartContext);
+  
 
 
   const agregarAlCarrito = () => {
     const detalle = { ...data, amount: counter };
     AddToCart(detalle);
+    toast.success(' Producto agregado al Carrito!', {
+      position: "top-right",
+      autoClose: 500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      });
   };
 
 
   return (
     <Card sx={{ maxWidth: 1000 }} className='detail2'>
-      <div>
+      <div className='detail' >
       <CardMedia
         component="img"
         width="400"
         image={data.img}
         alt="electro"
+        
       />
       </div>
       <div>
@@ -86,6 +97,7 @@ const ItemDetailContainer = ({ data }) => {
       </CardActions>
       </div>
     </Card>
+    
   );
 };
 

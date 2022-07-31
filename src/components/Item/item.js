@@ -24,7 +24,6 @@ const Item = ({ producto }) => {
             variant="h5" 
             color={"(37, 36, 36)"} 
             component="div" 
-            text-decoration={"none"}
             fontWeight="bold"
             fontFamily={"Lucida Sans Regular"}>
               {producto.articulo}
@@ -39,7 +38,6 @@ const Item = ({ producto }) => {
             variant="h5" 
             component="div"
             color={"(37, 36, 36)"} 
-            text-decoration={"none"}
             fontWeight="bold"
             fontFamily={"Lucida Sans Regular"}
             >

@@ -41,14 +41,17 @@
 
 .ItemCart1{
     width: 15%;
+    font-weight: bold;
 }
 
 .ItemCart2{
     width: 25%;
+    font-weight: bold;
 }
 
 .ItemCart3{
     width: 10%;
+    font-weight: bold;
 }
 
 
@@ -102,4 +105,16 @@
 
 .btnTerminar:hover {
 	background: rgb(53, 53, 54);
+}
+
+.btnRemoveItem {
+    border: none;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.btnRemoveItem:hover {
+	border: 1px red solid;
+    border-radius: 20%;
 }

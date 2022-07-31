@@ -17,3 +17,16 @@
     font-weight: 400;
     position:relative;      
    }
+
+   .btnCat{
+    font-size: 18px;
+    color: rgb(223, 215, 215);
+    font-family:'Lucida Sans';
+    font-weight: bold;
+    background-color: rgb(37, 34, 34);
+    border: none;
+   }
+
+   .btnCat a:hover{
+    color: blue;
+   }

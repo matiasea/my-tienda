@@ -2,14 +2,14 @@
 import { Link } from "react-router-dom";
 
 import * as React from 'react';
-import Button from '@mui/material/Button';
 import ClickAwayListener from '@mui/material/ClickAwayListener';
 import Grow from '@mui/material/Grow';
 import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
-import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import Stack from '@mui/material/Stack';
+
+//-----------ESTILOS -----------------
 import "./categories.css"
 
 const NavCategories = () => {
@@ -37,7 +37,6 @@ const NavCategories = () => {
     }
   }
 
-  // return focus to the button when we transitioned from !open -> open
   const prevOpen = React.useRef(open);
   React.useEffect(() => {
     if (prevOpen.current === true && open === false) {
@@ -50,18 +49,14 @@ const NavCategories = () => {
   return (
     <Stack direction="row" spacing={2}  >
       <div >
-        <Button 
-          className="nav2"
-          ref={anchorRef}
-          id="composition-button"
-          aria-controls={open ? 'composition-menu' : undefined}
-          aria-expanded={open ? 'true' : undefined}
-          aria-haspopup="true"
-          onClick={handleToggle}
-          
-        >
-          CATEGORIAS
-        </Button>
+        <button 
+        ref={anchorRef}
+        onClick={handleToggle}
+        className="btnCat"
+         >
+          Categorias
+         </button>
+        
         <Popper
           open={open}
           anchorEl={anchorRef.current}

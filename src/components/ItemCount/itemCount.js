@@ -1,10 +1,11 @@
 
 import React, {useContext} from "react";
 
-import "../ItemCount/itemCount.css";
+//---------------context----------------------
 import { ItemsCartContext } from "../Context/ItemCartContext";
 
-
+//------------estilos---------------------
+import "../ItemCount/itemCount.css";
 
 
 

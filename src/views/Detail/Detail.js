@@ -10,6 +10,8 @@ import { collection, query, getDocs, documentId, where } from "firebase/firestor
 //--------COMPONENTS----------------
 import Spinner from "../../components/Spinner/Spinner";
 
+
+
 const Detail = () => {
 const [ detailProduct, setDetailProduct ] = useState ([]);
 const [ waiting, setWaiting] = useState (true)

@@ -2,35 +2,36 @@ import React, { useContext } from 'react';
 import ItemCart from './ItemCart';
 import { Link } from "react-router-dom";
 import "../Cart/cart.css"
-
 import { ItemsCartContext } from '../Context/ItemCartContext';
-import { Button } from '@mui/material';
+
 
 
 const ItemsCart = () => {
-  const { itemsCart, setItemsCart, totalProd } = useContext(ItemsCartContext);
-  const total = itemsCart.reduce((acc, item) =>
-    acc + item.precio, 0)
-
-  
+  const { itemsCart, totalProd } = useContext(ItemsCartContext);
+    
   if (itemsCart == 0) {
     return (
       <div>
         <h2 className='CarroVacio'> Tu Carrito esta vacío</h2>
-        <Link to="/Product"><Button type="button" class="btn btn-dark"> Ir a Comprar </Button></Link>
+        <Link to="/Product">
+          <button className='btnTerminar'>
+          Ir a Comprar
+          </button>
+        </Link>
       </div>)
   }
   return (
     <div className='margin'>
       <table className="table ItemListC">
-        <thead >
-          <th scope="col" className="ItemCart1"></th>
-          <th scope="col" className="ItemCart2">Articulo</th>
-          <th scope="col" className="ItemCart1">Precio Unitario</th>
-          <th scope="col" className="ItemCart3">Cantidad</th>
-          <th scope="col" className="ItemCart2">Precio Total</th>
-          <th scope="col" className="ItemCart3"></th>
-
+        <thead>
+          <tr>
+            <td scope="col" className="ItemCart1"></td>
+            <td scope="col" className="ItemCart2">Articulo</td>
+            <td scope="col" className="ItemCart1">Precio Unitario</td>
+            <td scope="col" className="ItemCart3">Cantidad</td>
+            <td scope="col" className="ItemCart2">Precio Total</td>
+            <td scope="col" className="ItemCart3"></td>
+          </tr>
         </thead>
       </table>
       {itemsCart.map((itemsCart) => (
@@ -41,7 +42,6 @@ const ItemsCart = () => {
           <th className='total'>Total: ${totalProd(itemsCart)}</th>
         </tr>
       </thead>
-      
     </div>
   )
 }

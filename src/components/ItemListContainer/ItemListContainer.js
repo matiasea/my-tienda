@@ -1,15 +1,19 @@
 import "./ItemListContainer.css";
 import React, { useState, useEffect } from "react";
+
+//-----------------ESTILOS-------------------
 import "./ItemListContainer.css";
+
+//----------------COMPONENTES-------------------
 import ItemList from "../ItemList/ItemList";
 
 //--------FIREBASE -------------------
 import { db } from "../../firebase/fireBaseConfig";
 import { collection, query, getDocs } from "firebase/firestore";
 
+
 const ItemListContainer = () => {
   const [ productos, setProductos ] = useState ([]);
-
   const getProductos = async () => {
     const q = query(collection(db, "productos"));
     const stock = [];
@@ -33,8 +37,7 @@ const ItemListContainer = () => {
     <div>
       <div className="itemListCont">
       <ItemList productos={productos} />
-      
-    </div>
+      </div>
     </div>
   )
   

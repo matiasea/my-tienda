@@ -1,5 +1,9 @@
 import React from "react";
+
+//---------------------Componentes-----------
 import Item from "../Item/item";
+
+//-----------Estilos-------------------
 import "./ItemList.css";
 
 const ItemList = ({ productos }) => {

@@ -3,12 +3,11 @@ import React, {useContext} from 'react'
 import { Link } from 'react-router-dom';
 import LocalGroceryStoreTwoToneIcon from '@mui/icons-material/LocalGroceryStoreTwoTone';
 import { ItemsCartContext } from '../Context/ItemCartContext';
-import ItemsCart from './Cart';
 import "../Cart/cart.css"
 
 
 const CartIcon = () => {
-    const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
+    const {itemsCart} = useContext(ItemsCartContext);
     return (    
         <div>
             <Link to="/cart"  className="ItemCart">

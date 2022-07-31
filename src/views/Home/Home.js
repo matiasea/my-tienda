@@ -1,5 +1,9 @@
 import React from "react";
+
+//------------Imagenes----------------
 import lavado from "../Home/lavado.png"
+
+//-----------Estilos--------------
 import "./Home.css"
 
 
@@ -14,7 +18,7 @@ const Home = () => {
   return (
     <div>
       <Link to="/rubro/lavarropas">
-      <img src={lavado} className="lavado" />
+      <img src={lavado} className="lavado" alt="portada" />
       </Link>
       <Lineas/>
     </div>

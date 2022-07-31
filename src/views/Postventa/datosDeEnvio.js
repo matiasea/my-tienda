@@ -1,16 +1,14 @@
-import React, { useState} from "react";
+import React, { useState, useContext } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/fireBaseConfig";
-import { Formik, Field, Form } from "formik";
-
-import TextField from '@mui/material/TextField';
-import { async } from "@firebase/util";
-
+//-------Context---------------
+import { ItemsCartContext } from "../../components/Context/ItemCartContext"
 //------------ESTILOS--------------
 import "./datosDeEnvios.css"
 
 //------------COMPONENTS------------
 import MessageOk from "../../components/MessageOk/MessageOk";
+import { toast } from "react-toastify";
 
 
 
@@ -27,6 +25,8 @@ const initialState = {
 const DatosDeEnvio = () => {
     const [values, setValues] = useState(initialState);
     const [comprasId, setComprasId] = useState("");
+	const { setItemsCart} = useContext(ItemsCartContext);
+	const cartDelete = [];
          
      const handleOnChange = (e) => {
 		const { value, name } = e.target;
@@ -40,10 +40,17 @@ const DatosDeEnvio = () => {
         const docRef = await addDoc(collection(db, "compras"), {
             values,
           });
-          console.log("Document written with ID: ", docRef.id); 
-          setComprasId(docRef.id);
+                    setComprasId(docRef.id);
           setValues(initialState);
-          alert("Gracias por tu compra! numero de Gestion:" + comprasId);
+          toast.success(' Pocesando datos', {
+			position: "bottom-center",
+			autoClose: 3000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: true,
+			draggable: true,
+			progress: undefined,
+			});
 		  }
 		  
 
@@ -93,7 +100,10 @@ const DatosDeEnvio = () => {
 				onChange={handleOnChange}
 				>
 			</input>
-			<button className="btnEnviar">Send</button>
+			<button 
+			className="btnEnviar"
+			onClick={() => setItemsCart(cartDelete)}
+			>Send</button>
 			</form>
 			{comprasId && <MessageOk comprasID={comprasId} /> }
         </div>)

@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import ItemCount from "../ItemCount/itemCount";
 
+//--------ESTILOS---------------
 import "./categories.css"
 
 
@@ -15,7 +16,6 @@ const ItemCategories = ({props}) => {
     <Card  sx={{ maxWidth: 345 }} className="itemCategorias">
       <CardActionArea >
         <CardMedia
-            
           component="img"
           width="100"
           image={props.img}

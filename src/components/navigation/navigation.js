@@ -1,9 +1,15 @@
 import React, {useContext} from 'react'
+
+//------------Estilos------------------
 import "./navigation.css"
-import { Link } from "react-router-dom";
+
+//------------Componentes---------------
 import CartIcon from "../Cart/cartIcon";
-import { ItemsCartContext } from "../Context/ItemCartContext";
 import NavCategories from '../Categories/navCategories';
+
+import { Link } from "react-router-dom";
+import { ItemsCartContext } from "../Context/ItemCartContext";
+
 
 const Navigation = () => {
     const {itemsCart, setItemsCart} = useContext(ItemsCartContext);
@@ -13,13 +19,10 @@ const Navigation = () => {
             <div className="navbar-collapse">
 
             <ul className="nav3">
-                <Link to="/" className="nav3" aria-current="page">HOME</Link>
-                <Link to="/Product" className="nav3 " aria-current="page">TODOS LOS PRODUCTOS</Link>
+                <Link to="/" className="nav3" aria-current="page">Home</Link>
+                <Link to="/Product" className="nav3 " aria-current="page">Todos los productos</Link>
                 <NavCategories className="nav3"/>
-                <Link to="/Contact" className="nav3" >CONTACTO</Link>
-                
             </ul>
-            
             </div>
             </div>
             <CartIcon/>

@@ -33,19 +33,8 @@ export const ItemsCartProvider = ({ children }) => {
     }
   };
 
- /*  const eliminarDelCarrito = (item) => {
-   // const exist = itemsCart.find((x) => x.id === item.id);       
-     if (IdProd) {
-      setItemsCart(itemsCart.filter((x) => x.id !== item.id)); 
-    }
-  }; */ 
-
-
  const ItemRemove = (id) => setItemsCart(itemsCart.filter(product => product.id !== id));
   
-
- 
-
 
   const onAdd = () => {
     setCounter(counter + 1)
@@ -68,7 +57,16 @@ export const ItemsCartProvider = ({ children }) => {
 
 
 
-  return (<ItemsCartContext.Provider value={{ itemsCart, IdProd, setItemsCart, AddToCart, ItemRemove, counter, onAdd, onRemove, totalProd }}>
+  return (<ItemsCartContext.Provider value={{ 
+      itemsCart, 
+      IdProd, 
+      setItemsCart, 
+      AddToCart, 
+      ItemRemove, 
+      counter, 
+      onAdd, 
+      onRemove, 
+      totalProd }}>
     {children}
   </ItemsCartContext.Provider>
   );
